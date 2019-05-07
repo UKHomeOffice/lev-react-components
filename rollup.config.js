@@ -45,22 +45,24 @@ export default {
       'process.env.NODE_ENV': JSON.stringify('production'),
       ENVIRONMENT: JSON.stringify('production')
     }),
-    nodeGlobals(),
-    nodeBuiltins(),
     babel({
       exclude: 'node_modules/**'
+    }),
+    resolve({
+      browser: true,
+      extensions: ['.mjs', '.js', '.jsx', '.json']
+    }),
+    commonjs({
+      include: 'node_modules/**'
     }),
     json({
       include: 'node_modules/**',
       preferConst: true,
       indent: '  '
     }),
-    resolve({
-      browser: true,
-      extensions: ['.mjs', '.js', '.jsx', '.json']
-    }),
-    terser(),
-    commonjs()
+    nodeGlobals(),
+    nodeBuiltins(),
+    terser()
   ],
 
   external: [].concat(external)
