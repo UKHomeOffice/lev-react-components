@@ -22,7 +22,7 @@ var globals = {
 };
 
 export default {
-  input: 'src/index.js',
+  input: 'src/index.mjs',
 
   output: [
     {
