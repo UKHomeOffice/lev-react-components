@@ -1,5 +1,7 @@
 'use strict';
 
+export { default as Footer } from './footer';
+
 // GovUK Components
 export {
   BackLink,
