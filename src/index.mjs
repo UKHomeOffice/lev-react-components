@@ -1,7 +1,5 @@
 'use strict';
 
-export { default as Footer } from './footer';
-
 // GovUK Components
 export {
   BackLink,
@@ -17,6 +15,7 @@ export {
   ErrorText,
   Fieldset,
   FileUpload,
+  Footer,
   FormGroup,
   GridCol,
   GridRow,
