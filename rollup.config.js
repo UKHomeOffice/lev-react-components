@@ -6,6 +6,7 @@ import json from 'rollup-plugin-json';
 import nodeBuiltins from 'rollup-plugin-node-builtins';
 import nodeGlobals from 'rollup-plugin-node-globals';
 import { terser } from 'rollup-plugin-terser';
+import svg from 'rollup-plugin-svg';
 
 var pkg = require('./package.json');
 var externalDeps = Object.keys(
@@ -48,6 +49,7 @@ export default {
     babel({
       exclude: 'node_modules/**'
     }),
+    svg(),
     resolve({
       browser: true,
       extensions: ['.mjs', '.js', '.jsx', '.json']

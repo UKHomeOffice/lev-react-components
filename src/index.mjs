@@ -1,5 +1,8 @@
 'use strict';
 
+export { default as LevPage } from './lev-page';
+export { default as LevFooter } from './lev-footer';
+
 // GovUK Components
 export {
   BackLink,
