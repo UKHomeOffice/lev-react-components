@@ -1,11 +1,16 @@
 import React from 'react';
-import { default as Header } from '@govuk-react/header';
-import { default as Page } from '@govuk-react/page';
+import { H1, Page } from 'govuk-react';
+import { default as LevTopNav } from '../lev-top-nav';
 import { default as LevFooter } from '../lev-footer';
 
-const LevPage = props => <Page footer={<LevFooter />}>
-      <Header>{props.title}</Header>
+const LevPage = props => <Page footer={<LevFooter />} header={<LevTopNav companyTitle={props.companyTitle} serviceTitle={props.serviceTitle} />}>
+      <H1>{props.title}</H1>
       {props.children}
 </Page>;
+
+LevPage.defaultProps = {
+  companyTitle: 'HMPO',
+  serviceTitle: 'Life Event Verification'
+};
 
 export default LevPage;
