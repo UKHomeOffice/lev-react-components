@@ -1,16 +1,29 @@
 import React from 'react';
 import { H1, Page } from 'govuk-react';
-import { default as LevTopNav } from '../lev-top-nav';
-import { default as LevFooter } from '../lev-footer';
+import LevTopNav, { asTopNavAnchor, asNavLinkAnchor } from '../lev-top-nav';
+import LevFooter from '../lev-footer';
+import WideWidthContainer from '../wide-width-container';
 
-const LevPage = props => <Page footer={<LevFooter />} header={<LevTopNav companyTitle={props.companyTitle} serviceTitle={props.serviceTitle} />}>
-      <H1>{props.title}</H1>
-      {props.children}
-</Page>;
+const TopNavAnchor = asTopNavAnchor('a');
+
+const LevPage = props => {
+  const Header = <LevTopNav {...props.topnav} >
+      <TopNavAnchor href="/oauth/logout">Sign out</TopNavAnchor>
+    </LevTopNav>;
+  const Footer = <LevFooter />;
+
+  return <Page footer={Footer} header={Header} container={WideWidthContainer} {...props} >
+    { props.children || <H1>{props.title}</H1> }
+  </Page>;
+};
 
 LevPage.defaultProps = {
-  companyTitle: 'HMPO',
-  serviceTitle: 'Life Event Verification'
+  topnav: {
+    companyText: '',
+    serviceTitleText: 'Life Event Verification',
+    department: 'HMPO',
+    links: []
+  }
 };
 
 export default LevPage;
