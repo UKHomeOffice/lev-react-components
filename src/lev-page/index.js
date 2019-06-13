@@ -4,12 +4,8 @@ import LevTopNav, { asTopNavAnchor, asNavLinkAnchor } from '../lev-top-nav';
 import LevFooter from '../lev-footer';
 import WideWidthContainer from '../wide-width-container';
 
-const TopNavAnchor = asTopNavAnchor('a');
-
 const LevPage = props => {
-  const Header = <LevTopNav {...props.topnav} >
-      <TopNavAnchor href="/oauth/logout">Sign out</TopNavAnchor>
-    </LevTopNav>;
+  const Header = <LevTopNav {...props.topnav} />;
   const Footer = <LevFooter />;
 
   return <Page footer={Footer} header={Header} container={WideWidthContainer} {...props} >
@@ -20,9 +16,10 @@ const LevPage = props => {
 LevPage.defaultProps = {
   topnav: {
     companyText: '',
-    serviceTitleText: 'Life Event Verification',
     department: 'HMPO',
-    links: []
+    links: [],
+    serviceTitleText: 'Life Event Verification',
+    signOutLink: 'oauth/logout'
   }
 };
 

@@ -5,12 +5,21 @@ import TopNav, { asTopNavAnchor, asNavLinkAnchor } from '@govuk-react/top-nav';
 
 const LogoLink = asTopNavAnchor(Link);
 const NavLink= asNavLinkAnchor(Link);
+const NavAnchor= asNavLinkAnchor('a');
 
 import styled from 'styled-components';
 
 const WideTopNav = styled(TopNav)`
   > div {
     max-width: none;
+  }
+
+  ul {
+    width: 100%;
+
+    li:last-child {
+      margin: -1.9em 0 0 auto;
+    }
   }
 `;
 
@@ -51,15 +60,17 @@ const LevTopNav = props => {
       <WideTopNav company={CompanyLink} serviceTitle={ServiceTitleLink} {...props}>
         {props.links.map(e => <NavLink to={e.link}>{e.text}</NavLink>)}
         {props.children}
+        {props.signOutLink && <NavAnchor href={props.signOutLink}>{props.signOutText}</NavAnchor>}
       </WideTopNav>
     </TopNavWrapper>
   </BrowserRouter>;
-}
+};
 
 LevTopNav.defaultProps = {
   companyText: '',
   serviceTitleLink: '/',
   serviceTitleText: '',
+  signOutText: 'Sign out',
   links: []
 };
 
