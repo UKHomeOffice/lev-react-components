@@ -6,7 +6,7 @@ import WideWidthContainer from '../wide-width-container';
 
 const LevPage = props => {
   const Header = <LevTopNav {...props.topnav} />;
-  const Footer = <LevFooter />;
+  const Footer = <LevFooter {...props.footer} >{props.footerContent}</LevFooter>;
 
   return <Page footer={Footer} header={Header} container={WideWidthContainer} {...props} >
     { props.children || <H1>{props.title}</H1> }
@@ -20,7 +20,8 @@ LevPage.defaultProps = {
     links: [],
     serviceTitleText: 'Life Event Verification',
     signOutLink: 'oauth/logout'
-  }
+  },
+  footerContent: undefined
 };
 
 export default LevPage;
