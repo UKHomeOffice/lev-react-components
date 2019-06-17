@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Link } from 'react-router-dom';
-import CrownIcon from '@govuk-react/icon-crown';
+import CrownLogo from '@govuk-react/icon-crown';
+import HOLogo from './home-office.svg';
 import TopNav, { asTopNavAnchor, asNavLinkAnchor } from '@govuk-react/top-nav';
 
 const LogoLink = asTopNavAnchor(Link);
@@ -35,8 +36,26 @@ const HOTopNavWrapper = styled(WideTopNavWrapper)`
   }
 `;
 
+const StyledHOLogo = styled(HOLogo)`
+  margin-top: -6px;
+  margin-bottom: -12px;
+`;
+
 const LevTopNav = props => {
-  const IconTitle = <TopNav.IconTitle icon={<CrownIcon width="36" height="32" />}>{props.companyText}</TopNav.IconTitle>;
+  let TopNavWrapper = WideTopNavWrapper;
+  let Logo = CrownLogo;
+  let logoWidth = 36;
+  let logoHeight = 32;
+  switch (props.department) {
+    case 'HMPO':
+    case 'Home Office':
+      TopNavWrapper = HOTopNavWrapper;
+      Logo = StyledHOLogo;
+      logoHeight = 44;
+      break;
+  }
+
+  const IconTitle = <TopNav.IconTitle icon={<Logo width={logoWidth} height={logoHeight} />}>{props.companyText}</TopNav.IconTitle>;
   const CompanyLink = props.companyLink ? <LogoLink to={props.companyLink}>{IconTitle}</LogoLink> : IconTitle;
 
   const ServiceTitleLink = (
@@ -44,14 +63,6 @@ const LevTopNav = props => {
       {props.serviceTitleText}
     </NavLink>
   );
-
-  let TopNavWrapper = WideTopNavWrapper;
-  switch (props.department) {
-    case 'HMPO':
-    case 'Home Office':
-      TopNavWrapper = HOTopNavWrapper;
-      break;
-  }
 
   const link = props.links.map(e => <NavLink to={e.link}>{e.text}</NavLink>);
 

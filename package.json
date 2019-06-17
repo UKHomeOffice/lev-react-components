@@ -28,6 +28,7 @@
     "@babel/core": "^7.4.5",
     "@babel/preset-env": "^7.4.5",
     "@babel/preset-react": "^7.0.0",
+    "@svgr/rollup": "^4.3.0",
     "babel-plugin-styled-components": "^1.10.0",
     "govuk-react": "^0.7.1",
     "react": "^16.8.6",
@@ -41,7 +42,6 @@
     "rollup-plugin-node-globals": "^1.4.0",
     "rollup-plugin-node-resolve": "^4.2.4",
     "rollup-plugin-replace": "^2.2.0",
-    "rollup-plugin-svg": "^1.0.1",
     "rollup-plugin-terser": "^4.0.4",
     "styled-components": "^4.2.1"
   },
