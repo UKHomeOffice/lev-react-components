@@ -43,8 +43,8 @@ export default {
 
   plugins: [
     replace({
-      'process.env.NODE_ENV': JSON.stringify('production'),
-      ENVIRONMENT: JSON.stringify('production')
+      'process.env.NODE_ENV': JSON.stringify('development'),
+      ENVIRONMENT: JSON.stringify('development')
     }),
     babel({
       exclude: 'node_modules/**'
@@ -64,7 +64,7 @@ export default {
     }),
     nodeGlobals(),
     nodeBuiltins(),
-    terser()
+    // terser()
   ],
 
   external: [].concat(external)

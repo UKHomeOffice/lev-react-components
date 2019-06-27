@@ -2,6 +2,12 @@
 
 export { default as LevPage } from './lev-page';
 export { default as LevFooter } from './lev-footer';
+export { default as DatePicker } from './lev-report/DatePicker';
+export { default as ReportControls } from './lev-report/ReportControls';
+export { default as ReportFilters } from './lev-report/ReportFilters';
+export { default as Report } from './lev-report/Report';
+export { default as LevReport } from './lev-report';
+export { default as LevUsage } from './lev-report/charts/LevUsage';
 
 // GovUK Components
 export {
