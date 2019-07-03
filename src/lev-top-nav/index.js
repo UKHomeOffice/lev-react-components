@@ -54,19 +54,19 @@ const LevTopNav = props => {
   }
 
   const IconTitle = <TopNav.IconTitle icon={<Logo width={logoWidth} height={logoHeight} />}>{props.companyText}</TopNav.IconTitle>;
-  const CompanyLink = props.companyLink ? <LogoAnchor to={props.companyLink}>{IconTitle}</LogoAnchor> : IconTitle;
+  const CompanyLink = props.companyLink ? <LogoAnchor href={props.companyLink}>{IconTitle}</LogoAnchor> : IconTitle;
 
   const ServiceTitleLink = (
-    <NavAnchor to={props.serviceTitleLink}>
+    <NavAnchor href={props.serviceTitleLink}>
       {props.serviceTitleText}
     </NavAnchor>
   );
 
-  const link = props.links.map(e => <NavAnchor to={e.link}>{e.text}</NavAnchor>);
+  const link = props.links.map(e => <NavAnchor href={e.link}>{e.text}</NavAnchor>);
 
   return <TopNavWrapper>
     <WideTopNav company={CompanyLink} serviceTitle={ServiceTitleLink} {...props}>
-      {props.links.map(e => <NavAnchor to={e.link}>{e.text}</NavAnchor>)}
+      {props.links.map(e => <NavAnchor href={e.link}>{e.text}</NavAnchor>)}
       {props.children}
       {props.signOutLink && <NavAnchor href={props.signOutLink}>{props.signOutText}</NavAnchor>}
     </WideTopNav>
