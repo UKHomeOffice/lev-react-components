@@ -1,11 +1,9 @@
 import React from 'react';
-import { BrowserRouter, Link } from 'react-router-dom';
 import CrownLogo from '@govuk-react/icon-crown';
 import HOLogo from './home-office.svg';
 import TopNav, { asTopNavAnchor, asNavLinkAnchor } from '@govuk-react/top-nav';
 
-const LogoLink = asTopNavAnchor(Link);
-const NavLink= asNavLinkAnchor(Link);
+const LogoAnchor = asTopNavAnchor('a');
 const NavAnchor= asNavLinkAnchor('a');
 
 import styled from 'styled-components';
@@ -56,25 +54,23 @@ const LevTopNav = props => {
   }
 
   const IconTitle = <TopNav.IconTitle icon={<Logo width={logoWidth} height={logoHeight} />}>{props.companyText}</TopNav.IconTitle>;
-  const CompanyLink = props.companyLink ? <LogoLink to={props.companyLink}>{IconTitle}</LogoLink> : IconTitle;
+  const CompanyLink = props.companyLink ? <LogoAnchor to={props.companyLink}>{IconTitle}</LogoAnchor> : IconTitle;
 
   const ServiceTitleLink = (
-    <NavLink to={props.serviceTitleLink}>
+    <NavAnchor to={props.serviceTitleLink}>
       {props.serviceTitleText}
-    </NavLink>
+    </NavAnchor>
   );
 
-  const link = props.links.map(e => <NavLink to={e.link}>{e.text}</NavLink>);
+  const link = props.links.map(e => <NavAnchor to={e.link}>{e.text}</NavAnchor>);
 
-  return <BrowserRouter>
-    <TopNavWrapper>
-      <WideTopNav company={CompanyLink} serviceTitle={ServiceTitleLink} {...props}>
-        {props.links.map(e => <NavLink to={e.link}>{e.text}</NavLink>)}
-        {props.children}
-        {props.signOutLink && <NavAnchor href={props.signOutLink}>{props.signOutText}</NavAnchor>}
-      </WideTopNav>
-    </TopNavWrapper>
-  </BrowserRouter>;
+  return <TopNavWrapper>
+    <WideTopNav company={CompanyLink} serviceTitle={ServiceTitleLink} {...props}>
+      {props.links.map(e => <NavAnchor to={e.link}>{e.text}</NavAnchor>)}
+      {props.children}
+      {props.signOutLink && <NavAnchor href={props.signOutLink}>{props.signOutText}</NavAnchor>}
+    </WideTopNav>
+  </TopNavWrapper>;
 };
 
 LevTopNav.defaultProps = {
