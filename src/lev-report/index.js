@@ -1,4 +1,5 @@
 import React from 'react';
+import styled from 'styled-components';
 import { Main } from 'govuk-react';
 import LevPage from '../lev-page';
 import ReportFilters from "./ReportFilters";
@@ -8,6 +9,13 @@ const moment = require('moment');
 const SHORT_FORMAT = 'D/M/YYYY';
 
 const rand = n => Math.round(Math.random() * n);
+
+const FullWidthMain = styled(Main)`
+  & > div > div {
+    max-width: 100%;
+    width: 100%;
+  }
+`;
 
 class LevReport extends React.Component {
   constructor(props) {
@@ -85,7 +93,7 @@ class LevReport extends React.Component {
         onSubmit={this.handleSubmit.bind(this)}
         updateFrom={this.updateFrom.bind(this)}
         updateTo={this.updateTo.bind(this)} />
-      <Main>
+      <FullWidthMain>
         <LevUsage
           birth={this.state.birth}
           death={this.state.death}
@@ -99,7 +107,7 @@ class LevReport extends React.Component {
         <p>Total partnership usage: {this.state.totalPartnerships}</p>
         <p>Total across all data: {this.state.totalBirths + this.state.totalDeaths + this.state.totalMarriages + this.state.totalPartnerships}</p>
         <pre>{JSON.stringify(this.state, 0, 2)}</pre>
-      </Main>
+      </FullWidthMain>
     </LevPage>;
   }
 }
