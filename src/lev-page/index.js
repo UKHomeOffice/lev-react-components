@@ -7,16 +7,16 @@ import { createGlobalStyle } from 'styled-components';
 
 const GlobalFont = createGlobalStyle`
   body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: ${props => props.font || 'Arial, Helvetica, sans-serif'};
   }
 `;
 
-const LevPage = ({ topnav, footer, footerContent, title, children, ...props }) => {
+const LevPage = ({ topnav, footer, footerContent, title, font, children, ...props }) => {
   const Header = <LevTopNav { ...topnav } />;
   const Footer = <LevFooter { ...footer } >{footerContent}</LevFooter>;
 
   return <Page footer={Footer} header={Header} container={WideWidthContainer} { ...props }>
-    <GlobalFont />
+    <GlobalFont font={font} />
     { children || <H1>{title}</H1> }
   </Page>;
 };
