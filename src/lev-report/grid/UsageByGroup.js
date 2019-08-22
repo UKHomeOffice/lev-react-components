@@ -10,6 +10,34 @@ const Scroller = styled.div`
 const TracksContainer = styled.div`
   display: flex;
   flex-wrap: nowrap;
+  
+  > input[type=checkbox] {
+    display: none;
+  }
+  
+  > div > div.childOf {
+    display: none;
+  }
+  ${props => props && props.parents && props.parents.length && props.parents.map(p => `
+  > input#parent_${p.id}:checked ~ div > div.childOf.${p.id} {
+    display: flex;
+  }
+  > input#parent_${p.id} ~ div > div.${p.id} > label::before {
+    content: '+';
+    border: solid darkgrey 1px;
+    width: 1.3em;
+    display: inline-block;
+    text-align: center;
+    margin-left: -.65em;
+    margin-right: .5em;
+    vertical-align: middle;
+    font-weight: bold;
+    font-size: larger;
+  }
+  > input#parent_${p.id}:checked ~ div > div.${p.id} > label::before {
+    content: '-';
+  }
+  `).join()}
 `;
 const Track = styled.div`
   flex: 1 0 5em;
@@ -54,6 +82,22 @@ const Track = styled.div`
     border-width: 0 1px;
     z-index: 1;
   }
+  
+  &.groupName {
+    white-space: nowrap;
+    
+    > div.childOf::before {
+      content: '\\251C';
+      width: 1.1em;
+      margin-left: -.32em;
+      font-size: 2.5em;
+      overflow-y: visible;
+      color: #585858;
+    }
+    > div.childOf.lastChild::before {
+      content: '\\2514';
+    }
+  }
 `;
 const Data = styled.div`
   height: 3ex;
@@ -63,6 +107,10 @@ const Data = styled.div`
   background-color: #fff;
   padding: .5em;
   padding-left: 2em;
+  
+  > label {
+    cursor: pointer;
+  }
 `;
 const Heading = ({ children, ...props }) => <Data {...props}>{children}</Data>;
 const Datum = ({ children, ...props }) =>
