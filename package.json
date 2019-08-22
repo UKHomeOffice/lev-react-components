@@ -1,13 +1,14 @@
 {
   "name": "lev-react-components",
-  "version": "0.3.4",
+  "version": "0.4.0",
   "description": "React.js components for use in the LEV project",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rollup -c rollup.config.js",
-    "prepublish": "npm run build"
+    "prepublish": "npm run build",
+    "dev": "nodemon -w src/ -x npm run build"
   },
   "repository": {
     "type": "git",
@@ -23,7 +24,6 @@
     "url": "https://github.com/UKHomeOffice/lev-react-components/issues"
   },
   "homepage": "https://github.com/UKHomeOffice/lev-react-components#readme",
-  "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.4.5",
     "@babel/preset-env": "^7.4.5",
@@ -31,6 +31,8 @@
     "@svgr/rollup": "^4.3.0",
     "babel-plugin-styled-components": "^1.10.0",
     "govuk-react": "^0.7.1",
+    "moment": "^2.24.0",
+    "nodemon": "^1.19.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-markdown": "^4.0.8",
@@ -43,7 +45,8 @@
     "rollup-plugin-node-resolve": "^4.2.4",
     "rollup-plugin-replace": "^2.2.0",
     "rollup-plugin-terser": "^4.0.4",
-    "styled-components": "^4.2.1"
+    "styled-components": "^4.2.1",
+    "victory": "^32.3.3"
   },
   "peerDependencies": {
     "react": ">= 16.x.x",
