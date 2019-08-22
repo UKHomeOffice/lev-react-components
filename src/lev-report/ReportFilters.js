@@ -1,11 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 import DatePicker from "./DatePicker";
-import {Button} from 'govuk-react';
+import { Button } from 'govuk-react';
 
 const FormDiv = styled.div`
   position: relative;
   vertical-align: text-bottom;
+  margin-bottom: 15px;
 `;
 const BottomButton = styled('Button')`
   margin-bottom: 2px;
