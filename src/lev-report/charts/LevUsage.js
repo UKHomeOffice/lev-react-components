@@ -29,11 +29,12 @@ const datatypeBar = data => data && data.length && <VictoryBar
   x="date"
   y="usage"
   barRatio={0.9}
+  alignment="start"
 /> || null;
 
 const LevUsage = ({ datasets, dates, ...props }) => datasets && datasets.length &&
 <VictoryChart
-  padding={{ top: 0, bottom: 50, left: 50, right: 0 }}
+  padding={{ top: 0, bottom: 50, left: 50, right: 5 }}
   domainPadding={20}
   theme={VictoryTheme.material}
   style={{ labels: { fontSize: 15 } }}
@@ -41,7 +42,7 @@ const LevUsage = ({ datasets, dates, ...props }) => datasets && datasets.length 
   width={600}
 >
   <VictoryAxis
-    domain={[dates[0], dates[dates.length - 1]]}
+    domain={[dates[0], dates[dates.length - 1] + 86400000]}
     tickValues={dates.filter(tickFormat(dates.length))}
     tickFormat={tickFormat(dates.length)}
     tickLabelComponent={<CustomLabel freq={dates.length} />}
