@@ -3,6 +3,7 @@ import LevPage from '../lev-page';
 import ReportFilters from './ReportFilters';
 import LevUsage from './charts/LevUsage';
 import UsageByGroup from "./grid/UsageByGroup";
+import TotalUsageCounter from './TotalUsageCounter';
 
 class LevReport extends React.Component {
   constructor(props) {
@@ -34,6 +35,12 @@ class LevReport extends React.Component {
   }
 
   render() {
+    let total = 0;
+
+    this.state.totals.forEach((num) => {
+      total += num; 
+    });
+
     return <LevPage
       title="LEV Report"
       topnav={{
@@ -48,6 +55,7 @@ class LevReport extends React.Component {
         onSubmit={this.handleSubmit.bind(this)}
         updateFrom={this.updateFrom.bind(this)}
         updateTo={this.updateTo.bind(this)} />
+      <TotalUsageCounter count={total} />
       <LevUsage dates={this.state.dates} datasets={this.state.datasets} />
       <UsageByGroup datasets={this.state.datasets} groups={this.state.groups} totals={this.state.totals} />
     </LevPage>;
