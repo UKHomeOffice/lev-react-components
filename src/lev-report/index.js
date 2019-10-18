@@ -36,11 +36,11 @@ class LevReport extends React.Component {
   }
 
   updateFrom(e) {
-    this.setState({from: e.target.value});
+    this.setState({ from: e.target.value });
   }
 
   updateTo(e) {
-    this.setState({to: e.target.value});
+    this.setState({ to: e.target.value });
   }
 
   handleSubmit(e) {
