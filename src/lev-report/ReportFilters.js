@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import DatePicker from "./DatePicker";
 import { Button } from 'govuk-react';
+import ListFilter from './ListFilter';
 
 const FormDiv = styled.div`
   position: relative;
@@ -10,9 +11,10 @@ const FormDiv = styled.div`
 `;
 const BottomButton = styled('Button')`
   margin-bottom: 2px;
-  position: absolute;
+  display: inline-block;
   bottom: 0px;
-  
+  vertical-align: bottom;
+
   :active {
     top: inherit;
     bottom: -2px;
@@ -36,6 +38,13 @@ const ReportFilters = props =>
     }}>
       Usage to
     </DatePicker>
+    <ListFilter hint="Default: All Departments" input={{
+        name: 'currentGroup',
+        groups: props.groups,
+        value: props.currentGroup,
+    }}>
+      Filter by Department
+    </ListFilter>
     <BottomButton as={Button} type="submit">Show usage</BottomButton>
   </FormDiv>
 </form>;

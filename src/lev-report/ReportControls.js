@@ -11,7 +11,7 @@ const BottomButton = styled('Button')`
   margin-bottom: 2px;
   position: absolute;
   bottom: 0px;
-  
+
   :active {
     top: inherit;
     bottom: -2px;

@@ -1,4 +1,4 @@
-import React from 'react';
+  import React from 'react';
 import styled from 'styled-components';
 import { InputField } from 'govuk-react';
 
@@ -7,7 +7,7 @@ const RangeDiv = styled.div`
   margin-right: 2em;
   position: relative;
   vertical-align: text-bottom;
-  
+
   & > div {
     position: relative;
     display: inline-block;
@@ -20,7 +20,7 @@ const StyledDatePicker = styled.div`
   margin-left: 0px;
   max-width: 15em;
   min-width: 5em;
-  
+
   span {
     padding-right: 1em;
   }

@@ -14,6 +14,15 @@ const StyledCounter = styled.div`
   }
 `;
 
-const UsageCounter = props => <StyledCounter><p>{props.countPeriod}</p>{props.count}</StyledCounter>;
+const formatCount = (count) => {
+return count.toString().replace(/\d(?=(\d{3})+$)/g, '$&,')
+}
+
+const UsageCounter = props =>
+    <StyledCounter>
+        <p>{props.countPeriod}</p>
+        {props.group ? <p>{props.group}</p> : ''}
+        {formatCount(props.count)}
+    </StyledCounter>;
 
 export default UsageCounter;

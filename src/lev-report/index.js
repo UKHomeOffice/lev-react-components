@@ -17,61 +17,66 @@ const CountDiv = styled.div`
 `;
 
 class LevReport extends React.Component {
-  constructor(props) {
-      super(props);
-      this.state = {
-        allTime: props.allTime,
-        from: props.from,
-        to: props.to,
-        values: '',
-        dates: props.dates,
-        datasets: props.datasets,
-        dailyUsage: props.dailyUsage,
-        groups: props.groups,
-        totals: props.totals,
-        todaySearches: props.todaySearches
-      };
-  }
+    constructor(props) {
+        super(props);
+        this.state = {
+            allTime: props.allTime,
+            from: props.from,
+            to: props.to,
+            values: '',
+            dates: props.dates,
+            datasets: props.datasets,
+            dailyUsage: props.dailyUsage,
+            groups: props.groups,
+            totals: props.totals,
+            todaySearches: props.todaySearches,
+            currentGroup: props.currentGroup,
+        };
+    }
 
-  updateFrom(e) {
-    this.setState({ from: e.target.value });
-  }
+    updateFrom(e) {
+        this.setState({from: e.target.value});
+    }
 
-  updateTo(e) {
-    this.setState({ to: e.target.value });
-  }
+    updateTo(e) {
+        this.setState({to: e.target.value});
+    }
 
-  handleSubmit(e) {
-    // e.preventDefault();
-    // const from = moment(this.state.from).format(SHORT_FORMAT);
-    // const to = moment(this.state.to).format(SHORT_FORMAT);
-  }
+    handleSubmit(e) {
+        // e.preventDefault();
+        // const from = moment(this.state.from).format(SHORT_FORMAT);
+        // const to = moment(this.state.to).format(SHORT_FORMAT);
+    }
 
-  render() {
-    return <LevPage
-      title="LEV Report"
-      topnav={{
-        department: 'HMPO',
-        serviceTitleText: 'Life Event Verification - Report',
-        signOutLink: 'oauth/logout'
-      }}
-    >
-      <RelativeParent>
-        <ReportFilters
-          from={this.state.from}
-          to={this.state.to}
-          onSubmit={this.handleSubmit.bind(this)}
-          updateFrom={this.updateFrom.bind(this)}
-          updateTo={this.updateTo.bind(this)} />
-        <CountDiv>
-          <UsageCounter count={this.state.todaySearches[0].count} countPeriod="Daily Searches" />
-          <UsageCounter count={this.state.allTime[0].count} countPeriod="Total Searches" />
-        </CountDiv>
-      </RelativeParent>
-      <LevUsage dates={this.state.dates} datasets={this.state.datasets} />
-      <UsageByGroup datasets={this.state.datasets} groups={this.state.groups} totals={this.state.totals} />
-    </LevPage>;
-  }
+    render() { console.log(this.state);
+        return <LevPage
+            title="LEV Report"
+            topnav={{
+                department: 'HMPO',
+                serviceTitleText: 'Life Event Verification - Report',
+                signOutLink: 'oauth/logout'
+            }}
+        >
+            <RelativeParent>
+                <ReportFilters
+                    from={this.state.from}
+                    to={this.state.to}
+                    onSubmit={this.handleSubmit.bind(this)}
+                    updateFrom={this.updateFrom.bind(this)}
+                    updateTo={this.updateTo.bind(this)}
+                    groups={this.state.groups}
+                    />
+                <CountDiv>
+                    <UsageCounter count={this.state.todaySearches[0].count}
+                                  countPeriod="Searches Today" group={this.state.currentGroup} />
+                    <UsageCounter count={this.state.allTime[0].count}
+                                  countPeriod="Total Searches" group={this.state.currentGroup} />
+                </CountDiv>
+            </RelativeParent>
+            <LevUsage dates={this.state.dates} datasets={this.state.datasets}/>
+            <UsageByGroup datasets={this.state.datasets} groups={this.state.groups} totals={this.state.totals}/>
+        </LevPage>;
+    }
 }
 
 export default LevReport;
