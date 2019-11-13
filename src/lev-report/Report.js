@@ -15,7 +15,7 @@ class Report extends React.Component {
     this.state = {
       from: props.from || '',
       to: props.to || '',
-      values: (props.from || props.to) ? vals(props.from, props.to) : '',
+      values: (props.from || props.to) ? vals(props.from, props.to) : ''
     };
   }
 

@@ -18,10 +18,15 @@ const formatCount = (count) => {
 return count.toString().replace(/\d(?=(\d{3})+$)/g, '$&,')
 }
 
+const formatDate = (count) => {
+    return count.format('DD/MM/YY');
+}
+
 const UsageCounter = props =>
     <StyledCounter>
-        <p>{props.countPeriod}</p>
-        {props.group ? <p>{props.group}</p> : ''}
+        <p>Searches {props.group ? ' for ' + props.group : ''}</p>
+        <p>{(props.from ? formatDate(props.from) + ' - ' : '')}
+        {(props.to ? formatDate(props.to) : '')}</p>
         {formatCount(props.count)}
     </StyledCounter>;
 
