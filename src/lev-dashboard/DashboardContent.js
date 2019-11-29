@@ -9,20 +9,20 @@ const CountDiv = styled.div`
 `;
 
 class DashboardContent extends React.Component {
-    constructor(props)
-    {
-        super(props);
-        this.state = {
-            todaySearches: props.todaySearches,
-            allTime: props.allTime,
-        };
-    }
-    render() {
-        return  <CountDiv id="dashboard">
-                <DashboardCounter id="daily" period="searches today" count={this.state.todaySearches}/>
-                <DashboardCounter id="allTime" period="searches all time" count={this.state.allTime}/>
-                </CountDiv>;
-    }
+  constructor(props) {
+    super(props);
+    this.state = {
+      todaySearches: props.todaySearches,
+      allTime: props.allTime,
+    };
+  }
+
+  render() {
+    return <CountDiv id="dashboard">
+      <DashboardCounter period="searches today" count={this.state.todaySearches}/>
+      <DashboardCounter period="searches all time" count={this.state.allTime}/>
+    </CountDiv>;
+  }
 }
 
 export default DashboardContent;
