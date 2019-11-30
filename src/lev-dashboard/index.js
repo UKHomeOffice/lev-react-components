@@ -12,6 +12,7 @@ const LevDashboard = (props) =>
     signOutLink: 'oauth/logout'
   }}
 >
+  <script dangerouslySetInnerHTML={{ __html: `window.dashboardProps=${JSON.stringify(props)};` }}></script>
   <script src="/public/js/bundle.js"></script>
   <DashboardContent todaySearches={props.todaySearches} allTime={props.allTime} />
 </LevPage>;
