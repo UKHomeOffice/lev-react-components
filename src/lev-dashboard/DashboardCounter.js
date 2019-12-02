@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const StyledCounter = styled.div`
+const StyledDiv = styled.div`
         color: #9325b2;
         flex: 1 1 0; 
         text-align: center;
@@ -19,13 +19,13 @@ const StyledCounter = styled.div`
 `;
 
 const formatCount = (count) => {
-    return count.toString().replace(/\d(?=(\d{3})+$)/g, '$&,')
+    return Number(count).toLocaleString();
 }
 
 const DashboardCounter = props =>
-    <StyledCounter>
+    <StyledDiv>
         <h2 id={props.id}>{formatCount(props.count)}</h2>
         <p>{props.period}</p>
-    </StyledCounter>
+    </StyledDiv>
 
 export default DashboardCounter;

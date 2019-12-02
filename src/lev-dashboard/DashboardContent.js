@@ -3,14 +3,13 @@ import styled from 'styled-components';
 import DashboardCounter from "./DashboardCounter";
 
 const CountDiv = styled.div`
-  position: relative;
   display: flex;
-  flex-direction: row;
 `;
 
 const REFRESH = 10 * 1000;
 const FRAMES = 4;
 const DURATION = 1500;
+const UPDATE_COUNTER_URL = '/dashboard/data';
 
 class DashboardContent extends React.Component {
   constructor(props) {
@@ -63,13 +62,18 @@ class DashboardContent extends React.Component {
     const dash = this;
     xhttp.onreadystatechange = function stateChanged() {
       if (this.readyState === 4 && this.status === 200) {
-        const json = JSON.parse(xhttp.responseText);
-        if (dash.state.todaySearches !== json.todaySearches) {
-          dash.animateUpdate(dash.state.todaySearches, json.todaySearches, dash.state.allTime, json.allTime);
+        try {
+          const json = JSON.parse(xhttp.responseText);
+          if (dash.state.todaySearches !== json.todaySearches) {
+            dash.animateUpdate(dash.state.todaySearches, json.todaySearches, dash.state.allTime, json.allTime);
+          }
+        }
+        catch (e) {
+          console.error('Error parsing dashboard data:', e);
         }
       }
     };
-    xhttp.open('GET', 'http://localhost:4000/dashboard/data', true);
+    xhttp.open('GET', UPDATE_COUNTER_URL, true);
     xhttp.send();
   }
 
