@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const StyledCounter = styled.div`
+const StyledDiv = styled.div`
   font-size: 40px;
   vertical-align: text-bottom;
   display: inline-block;
@@ -15,19 +15,19 @@ const StyledCounter = styled.div`
 `;
 
 const formatCount = (count) => {
-return count.toString().replace(/\d(?=(\d{3})+$)/g, '$&,')
+  return count.toString().replace(/\d(?=(\d{3})+$)/g, '$&,')
 }
 
 const formatDate = (count) => {
-    return count.format('DD/MM/YY');
+  return count.format('DD/MM/YY');
 }
 
 const UsageCounter = props =>
-    <StyledCounter>
-        <p>Searches {props.group ? ' for ' + props.group : ''}</p>
-        <p>{(props.from ? formatDate(props.from) + ' - ' : '')}
-        {(props.to ? formatDate(props.to) : '')}</p>
-        {formatCount(props.count)}
-    </StyledCounter>;
+  <StyledDiv>
+    <p>Searches {props.group ? ' for ' + props.group : ''}</p>
+    <p>{(props.from ? formatDate(props.from) + ' - ' : '')}
+      {(props.to ? formatDate(props.to) : '')}</p>
+    {formatCount(props.count)}
+  </StyledDiv>;
 
 export default UsageCounter;

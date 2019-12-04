@@ -1,8 +1,8 @@
- import React from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import { InputField } from 'govuk-react';
 
-const StyledListFilter = styled(InputField)`
+const StyledDataList = styled(InputField)`
   display: inline-block;
   max-width: 15em;
   width: 15em;
@@ -10,7 +10,7 @@ const StyledListFilter = styled(InputField)`
 `;
 
 const ListFilter = ({ hint, children, input}) =>
-<StyledListFilter
+<StyledDataList
     hint={hint}
     input={{
         ...input,
@@ -23,6 +23,6 @@ const ListFilter = ({ hint, children, input}) =>
         )}
      </datalist>
     {children}
-</StyledListFilter>
+</StyledDataList>
 
 export default ListFilter;
