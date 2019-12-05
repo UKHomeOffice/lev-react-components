@@ -13,7 +13,7 @@ const GlobalFont = createGlobalStyle`
 
 const LevPage = ({ topnav, footer, footerContent, title, font, children, ...props }) => {
   const Header = <LevTopNav { ...topnav } />;
-  const Footer = <LevFooter { ...footer } >{footerContent}</LevFooter>;
+  const Footer = (footer || footerContent) ? <LevFooter { ...footer } >{footerContent}</LevFooter> : null;
 
   return <Page footer={Footer} header={Header} container={WideWidthContainer} { ...props }>
     <GlobalFont font={font} />

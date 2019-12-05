@@ -8,6 +8,8 @@ export { default as ReportFilters } from './lev-report/ReportFilters';
 export { default as Report } from './lev-report/Report';
 export { default as LevReport } from './lev-report';
 export { default as LevUsage } from './lev-report/charts/LevUsage';
+export { default as LevDashboard } from './lev-dashboard';
+export { default as DashboardContent } from './lev-dashboard/DashboardContent';
 
 // GovUK Components
 export {
