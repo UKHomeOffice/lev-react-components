@@ -20,7 +20,6 @@ class LevReport extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      allTime: props.allTime,
       from: props.from,
       to: props.to,
       values: '',
@@ -29,7 +28,6 @@ class LevReport extends React.Component {
       dailyUsage: props.dailyUsage,
       groups: props.groups,
       totals: props.totals,
-      todaySearches: props.todaySearches,
       currentGroup: props.currentGroup,
       totalTimePeriodByGroup: props.totalTimePeriodByGroup,
     };

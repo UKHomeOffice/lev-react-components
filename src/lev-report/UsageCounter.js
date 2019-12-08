@@ -29,6 +29,5 @@ const UsageCounter = props =>
       {(props.to ? formatDate(props.to) : '')}</p>
     {formatCount(props.count)}
   </StyledDiv>;
-const UsageCounter = props => <StyledCounter><p>{props.countPeriod}</p>{props.count}</StyledCounter>;
 
 export default UsageCounter;
