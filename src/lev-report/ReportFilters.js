@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import DatePicker from "./DatePicker";
 import { Button } from 'govuk-react';
-import ListFilter from './ListFilter';
+import GroupFilter from './GroupFilter';
 
 const FormDiv = styled.div`
   position: relative;
@@ -38,13 +38,13 @@ const ReportFilters = props =>
     }}>
       Usage to
     </DatePicker>
-    <ListFilter hint="Default: All Departments" input={{
+    <GroupFilter hint="Default: All Departments" input={{
         name: 'currentGroup',
         groups: props.groups,
         value: props.currentGroup,
     }}>
       Filter by Department
-    </ListFilter>
+    </GroupFilter>
     <BottomButton as={Button} type="submit">Show usage</BottomButton>
   </FormDiv>
 </form>;
