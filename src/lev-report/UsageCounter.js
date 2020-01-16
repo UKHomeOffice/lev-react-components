@@ -14,13 +14,8 @@ const StyledDiv = styled.div`
   }
 `;
 
-const formatCount = (count) => {
-  return count.toString().replace(/\d(?=(\d{3})+$)/g, '$&,')
-}
-
-const formatDate = (count) => {
-  return count.format('DD/MM/YY');
-}
+const formatCount = (count) => count.toString().replace(/\d(?=(\d{3})+$)/g, '$&,');
+const formatDate = (count) => count.format('DD/MM/YY');
 
 const UsageCounter = props =>
   <StyledDiv>
