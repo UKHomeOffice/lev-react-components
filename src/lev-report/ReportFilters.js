@@ -38,11 +38,8 @@ const ReportFilters = props =>
     }}>
       Usage to
     </DatePicker>
-    <GroupFilter hint="Default: All Departments" input={{
-        name: 'currentGroup',
-        groups: props.groups,
-        value: props.currentGroup,
-    }}>
+    <GroupFilter hint="Default: All Departments" groups={props.groups}
+                 selectedGroup={props.currentGroup} name="currentGroup">
       Filter by Department
     </GroupFilter>
     <BottomButton as={Button} type="submit">Show usage</BottomButton>

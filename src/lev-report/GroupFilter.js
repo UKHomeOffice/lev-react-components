@@ -9,20 +9,22 @@ const StyledInputField = styled(InputField)`
   margin-right: 2em;
 `;
 
-const GroupFilter = ({ hint, children, input}) =>
-<StyledInputField
+const GroupFilter = ({ hint, children, input, groups, selectedGroup, name }) =>
+  <StyledInputField
     hint={hint}
     input={{
-        ...input,
-        list: 'group-list'
+      ...input,
+      list: 'group-list',
+      value: selectedGroup,
+      name
     }}
-    >
+  >
     <datalist id="group-list">
         {input.groups.map((item) =>
           <option value={item.name}></option>
         )}
      </datalist>
     {children}
-</StyledInputField>;
+  </StyledInputField>;
 
 export default GroupFilter;
