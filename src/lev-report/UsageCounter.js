@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+const moment = require('moment');
 
 const StyledDiv = styled.div`
   font-size: 40px;
@@ -14,14 +15,14 @@ const StyledDiv = styled.div`
   }
 `;
 
-const formatCount = (count) => count.toString().replace(/\d(?=(\d{3})+$)/g, '$&,');
-const formatDate = (count) => count.format('DD/MM/YY');
+const formatCount = (count) => Number(count).toLocaleString();
+const formatDate = (date, mDate = moment(date)) => date && mDate.isValid() && mDate.format('DD/MM/YY');
 
 const UsageCounter = props =>
   <StyledDiv>
     <p>Searches {props.group ? ' for ' + props.group : ''}</p>
     <p>{(props.from ? formatDate(props.from) + ' - ' : '')}
-      {(props.to ? formatDate(props.to) : '')}</p>
+      {(props.to ? formatDate(props.to) : 'today')}</p>
     {formatCount(props.count)}
   </StyledDiv>;
 
