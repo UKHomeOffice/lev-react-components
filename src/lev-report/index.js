@@ -29,7 +29,7 @@ class LevReport extends React.Component {
       groups: props.groups,
       totals: props.totals,
       currentGroup: props.currentGroup,
-      totalTimePeriodByGroup: props.totalTimePeriodByGroup,
+      total: props.total,
     };
   }
 
@@ -66,7 +66,7 @@ class LevReport extends React.Component {
           groups={this.state.groups}
         />
         <CountDiv>
-          <UsageCounter count={this.state.totalTimePeriodByGroup[0].count}
+          <UsageCounter count={this.state.total}
                         from={this.state.from} to={this.state.to}
                         group={this.state.currentGroup}/>
         </CountDiv>
