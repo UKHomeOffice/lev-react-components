@@ -14,18 +14,18 @@ const StyledDiv = styled.div`
         margin-bottom: -3vh;
     }
     p { 
-        font-size: 9vh; 
+        font-size: 8vh; 
     }
 `;
 
 const formatCount = (count) => {
     return Number(count).toLocaleString();
-}
+};
 
 const DashboardCounter = props =>
-    <StyledDiv>
-        <h2 id={props.id}>{formatCount(props.count)}</h2>
-        <p>{props.period}</p>
-    </StyledDiv>
+  <StyledDiv>
+    <h2 id={props.id}>{formatCount(props.count)}</h2>
+    <p>{props.period}</p>
+  </StyledDiv>;
 
 export default DashboardCounter;

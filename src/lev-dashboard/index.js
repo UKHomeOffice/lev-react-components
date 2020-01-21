@@ -11,6 +11,7 @@ const LevDashboard = (props) =>
     serviceTitleText: 'Life Event Verification - Dashboard',
     signOutLink: 'oauth/logout'
   }}
+  bodyStyles='background-color: black;'
 >
   <script dangerouslySetInnerHTML={{ __html: `window.dashboardProps=${JSON.stringify(props)};` }}></script>
   <script src="/public/js/bundle.js"></script>

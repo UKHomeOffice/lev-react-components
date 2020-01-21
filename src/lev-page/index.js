@@ -5,18 +5,19 @@ import LevFooter from '../lev-footer';
 import WideWidthContainer from '../wide-width-container';
 import { createGlobalStyle } from 'styled-components';
 
-const GlobalFont = createGlobalStyle`
+const GlobalStyles = createGlobalStyle`
   body {
     font-family: ${props => props.font || 'Arial, Helvetica, sans-serif'};
+    ${({ styles }) => styles ? (Array.isArray(styles) ? styles.join('\n') : styles) : ''}
   }
 `;
 
-const LevPage = ({ topnav, footer, footerContent, title, font, children, ...props }) => {
+const LevPage = ({ topnav, footer, footerContent, title, font, bodyStyles, children, ...props }) => {
   const Header = <LevTopNav { ...topnav } />;
   const Footer = (footer || footerContent) ? <LevFooter { ...footer } >{footerContent}</LevFooter> : null;
 
   return <Page footer={Footer} header={Header} container={WideWidthContainer} { ...props }>
-    <GlobalFont font={font} />
+    <GlobalStyles font={font} styles={bodyStyles} />
     { children || <H1>{title}</H1> }
   </Page>;
 };
