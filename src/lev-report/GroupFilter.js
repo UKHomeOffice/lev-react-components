@@ -20,10 +20,10 @@ const GroupFilter = ({ hint, children, input, groups, selectedGroup, name }) =>
     }}
   >
     <datalist id="group-list">
-        {input.groups.map((item) =>
-          <option value={item.name}></option>
-        )}
-     </datalist>
+      {groups.map((item) =>
+        <option key={item.name} value={item.name}></option>
+      )}
+    </datalist>
     {children}
   </StyledInputField>;
 
