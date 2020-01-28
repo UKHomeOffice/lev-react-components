@@ -34,7 +34,7 @@ const datatypeBar = data => data && data.length && <VictoryBar
 
 const LevUsage = ({ datasets, dates, ...props }) => datasets && datasets.length &&
 <VictoryChart
-  padding={{ top: 0, bottom: 50, left: 50, right: 5 }}
+  padding={{ top: 10, bottom: 50, left: 50, right: 5 }}
   domainPadding={20}
   theme={VictoryTheme.material}
   style={{ labels: { fontSize: 15 } }}

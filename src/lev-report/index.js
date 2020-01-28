@@ -3,20 +3,34 @@ import LevPage from '../lev-page';
 import ReportFilters from './ReportFilters';
 import LevUsage from './charts/LevUsage';
 import UsageByGroup from "./grid/UsageByGroup";
+import UsageCounter from './UsageCounter';
+import styled from 'styled-components';
+
+const RelativeParent = styled.div`
+  position: relative;
+`;
+
+const CountDiv = styled.div`
+  position: absolute;
+  right: 0;
+  top: 0;
+`;
 
 class LevReport extends React.Component {
   constructor(props) {
-      super(props);
-      this.state = {
-        from: props.from,
-        to: props.to,
-        values: '',
-        dates: props.dates,
-        datasets: props.datasets,
-        dailyUsage: props.dailyUsage,
-        groups: props.groups,
-        totals: props.totals
-      };
+    super(props);
+    this.state = {
+      from: props.from,
+      to: props.to,
+      values: '',
+      dates: props.dates,
+      datasets: props.datasets,
+      dailyUsage: props.dailyUsage,
+      groups: props.groups,
+      totals: props.totals,
+      currentGroup: props.currentGroup,
+      total: props.total,
+    };
   }
 
   updateFrom(e) {
@@ -42,14 +56,24 @@ class LevReport extends React.Component {
         signOutLink: 'oauth/logout'
       }}
     >
-      <ReportFilters
-        from={this.state.from}
-        to={this.state.to}
-        onSubmit={this.handleSubmit.bind(this)}
-        updateFrom={this.updateFrom.bind(this)}
-        updateTo={this.updateTo.bind(this)} />
-      <LevUsage dates={this.state.dates} datasets={this.state.datasets} />
-      <UsageByGroup datasets={this.state.datasets} groups={this.state.groups} totals={this.state.totals} />
+      <RelativeParent>
+        <ReportFilters
+          from={this.state.from}
+          to={this.state.to}
+          onSubmit={this.handleSubmit.bind(this)}
+          updateFrom={this.updateFrom.bind(this)}
+          updateTo={this.updateTo.bind(this)}
+          groups={this.state.groups}
+          currentGroup={this.state.currentGroup}
+        />
+        <CountDiv>
+          <UsageCounter count={this.state.total}
+                        from={this.state.from} to={this.state.to}
+                        group={this.state.currentGroup}/>
+        </CountDiv>
+      </RelativeParent>
+      <LevUsage dates={this.state.dates} datasets={this.state.datasets}/>
+      <UsageByGroup datasets={this.state.datasets} groups={this.state.groups} totals={this.state.totals}/>
     </LevPage>;
   }
 }
