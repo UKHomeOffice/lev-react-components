@@ -64,6 +64,7 @@ class LevReport extends React.Component {
           updateFrom={this.updateFrom.bind(this)}
           updateTo={this.updateTo.bind(this)}
           groups={this.state.groups}
+          currentGroup={this.state.currentGroup}
         />
         <CountDiv>
           <UsageCounter count={this.state.total}
