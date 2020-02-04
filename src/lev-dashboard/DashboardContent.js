@@ -1,6 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import DashboardCounter from "./DashboardCounter";
+import CostSavingCounter from "./CostSavingCounter";
+
+const DashboardDiv = styled.div`
+`;
 
 const CountDiv = styled.div`
   display: flex;
@@ -78,10 +82,13 @@ class DashboardContent extends React.Component {
   }
 
   render() {
-    return <CountDiv id="dashboard">
+    return <DashboardDiv>
+      <CostSavingCounter group="customers" count='100000' />
+    <CountDiv id="dashboard">
       <DashboardCounter period="searches today" count={this.state.todaySearches} />
       <DashboardCounter period="searches all time" count={this.state.allTime} />
-    </CountDiv>;
+    </CountDiv>
+    </DashboardDiv>
   }
 }
 
