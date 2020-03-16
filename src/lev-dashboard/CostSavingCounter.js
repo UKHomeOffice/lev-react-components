@@ -10,12 +10,11 @@ const StyledDiv = styled.div`
   border-radius: 7px; 
   margin-bottom: 1vh; 
 `
-const formatCount = count => '£' + count;
 
 const CostSavingCounter = props =>
   <StyledDiv>
-    <p>Cost Saving to {props.group}</p>
-    <h2>{formatCount(props.count)}</h2>
+    <h2>£{Number(props.costsaving).toLocaleString()}</h2>
+    <p>cost saving to {props.group}</p>
   </StyledDiv>
 
 export default CostSavingCounter;
