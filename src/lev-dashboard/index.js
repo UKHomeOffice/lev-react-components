@@ -15,7 +15,7 @@ const LevDashboard = (props) =>
 >
   <script dangerouslySetInnerHTML={{ __html: `window.dashboardProps=${JSON.stringify(props)};` }}></script>
   <script src="/public/js/bundle.js"></script>
-  <DashboardContent todaySearches={props.todaySearches} allTime={props.allTime} />
+  <DashboardContent customerCostSaving={props.customerCostSaving} todaySearches={props.todaySearches} allTime={props.allTime} />
 </LevPage>;
 
 export default LevDashboard;
