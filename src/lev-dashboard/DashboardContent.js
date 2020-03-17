@@ -3,9 +3,6 @@ import styled from 'styled-components';
 import DashboardCounter from "./DashboardCounter";
 import CostSavingCounter from "./CostSavingCounter";
 
-const DashboardDiv = styled.div`
-`;
-
 const CountDiv = styled.div`
   display: flex;
 `;
@@ -48,13 +45,13 @@ class DashboardContent extends React.Component {
     this.setState({
       todaySearches: todayNew < todayOld ? (todayOld = 0) : todayOld + Math.round(todayDiff / FRAMES),
       allTime: allOld + Math.round(allDiff / FRAMES),
-      customerCostSaving: custSavingOld,
+      customerCostSaving: custSavingOld + Math.round(custSavingDiff / FRAMES),
     });
     this.animateIDs = Array.from({ length: FRAMES - 1 },(f, i) =>
       setTimeout(() => this.setState({
         todaySearches: todayOld + Math.round((todayDiff / (FRAMES - i))),
         allTime: allOld + Math.round(allDiff / (FRAMES - i)),
-        customerCostSaving: custSavingOld,
+        customerCostSaving: custSavingOld + Math.round(custSavingDiff / (FRAMES - i)),
       }), Math.round(DURATION / (FRAMES - i)))
     );
     this.animateIDs.push(setTimeout(() => {
@@ -89,13 +86,13 @@ class DashboardContent extends React.Component {
   }
 
   render() {
-    return <DashboardDiv>
+    return <div>
       <CostSavingCounter group="customers" costsaving={this.state.customerCostSaving} />
     <CountDiv id="dashboard">
       <DashboardCounter period="searches today" count={this.state.todaySearches} />
       <DashboardCounter period="searches all time" count={this.state.allTime} />
     </CountDiv>
-    </DashboardDiv>
+    </div>
   }
 }
 
