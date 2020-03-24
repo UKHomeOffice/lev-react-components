@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import DashboardCounter from "./DashboardCounter";
+import CostSavingCounter from "./CostSavingCounter";
 
 const CountDiv = styled.div`
   display: flex;
@@ -17,6 +18,7 @@ class DashboardContent extends React.Component {
     this.state = {
       todaySearches: props.todaySearches,
       allTime: props.allTime,
+      customerCostSaving: props.customerCostSaving,
     };
     this.animateIDs = [];
   }
@@ -34,25 +36,30 @@ class DashboardContent extends React.Component {
     this.animateIDs.forEach(id => clearTimeout(id));
   }
 
-  animateUpdate(todayOld, todayNew, allOld, allNew) {
+  animateUpdate(todayOld, todayNew, allOld, allNew, custSavingOld, custSavingNew) {
     this.stopAnimation();
     const todayDiff = todayNew < todayOld ? todayNew : todayNew - todayOld;
     const allDiff = allNew - allOld;
+    const custSavingDiff = custSavingNew - custSavingOld;
+
     this.setState({
       todaySearches: todayNew < todayOld ? (todayOld = 0) : todayOld + Math.round(todayDiff / FRAMES),
-      allTime: allOld + Math.round(allDiff / FRAMES)
+      allTime: allOld + Math.round(allDiff / FRAMES),
+      customerCostSaving: custSavingOld + Math.round(custSavingDiff / FRAMES),
     });
     this.animateIDs = Array.from({ length: FRAMES - 1 },(f, i) =>
       setTimeout(() => this.setState({
         todaySearches: todayOld + Math.round((todayDiff / (FRAMES - i))),
-        allTime: allOld + Math.round(allDiff / (FRAMES - i))
+        allTime: allOld + Math.round(allDiff / (FRAMES - i)),
+        customerCostSaving: custSavingOld + Math.round(custSavingDiff / (FRAMES - i)),
       }), Math.round(DURATION / (FRAMES - i)))
     );
     this.animateIDs.push(setTimeout(() => {
       this.stopAnimation();
       this.setState({
         todaySearches: todayNew,
-        allTime: allNew
+        allTime: allNew,
+        customerCostSaving: custSavingNew
       })
     }, DURATION));
   }
@@ -65,7 +72,8 @@ class DashboardContent extends React.Component {
         try {
           const json = JSON.parse(xhttp.responseText);
           if (dash.state.todaySearches !== json.todaySearches) {
-            dash.animateUpdate(dash.state.todaySearches, json.todaySearches, dash.state.allTime, json.allTime);
+            dash.animateUpdate(dash.state.todaySearches, json.todaySearches, dash.state.allTime, json.allTime,
+              dash.state.customerCostSaving, json.customerCostSaving);
           }
         }
         catch (e) {
@@ -78,10 +86,13 @@ class DashboardContent extends React.Component {
   }
 
   render() {
-    return <CountDiv id="dashboard">
+    return <div>
+      <CostSavingCounter group="customers" costsaving={this.state.customerCostSaving} />
+    <CountDiv id="dashboard">
       <DashboardCounter period="searches today" count={this.state.todaySearches} />
       <DashboardCounter period="searches all time" count={this.state.allTime} />
-    </CountDiv>;
+    </CountDiv>
+    </div>
   }
 }
 

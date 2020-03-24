@@ -7,14 +7,10 @@ const StyledDiv = styled.div`
         text-align: center;
         border: 8px solid #9325b2;
         border-radius: 7px; 
-        margin-right: 1vh; 
+        font-size: 9vh; 
     h2 {
-        font-size: 25vh; 
         text-shadow: 2px 2px 4px #000000;
         margin-bottom: -3vh;
-    }
-    p { 
-        font-size: 8vh; 
     }
 `;
 
