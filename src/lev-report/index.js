@@ -5,6 +5,7 @@ import LevUsage from './charts/LevUsage';
 import UsageByGroup from "./grid/UsageByGroup";
 import UsageCounter from './UsageCounter';
 import styled from 'styled-components';
+import HourlyUsage from "./charts/HourlyUsage";
 
 const RelativeParent = styled.div`
   position: relative;
@@ -26,6 +27,7 @@ class LevReport extends React.Component {
       dates: props.dates,
       datasets: props.datasets,
       dailyUsage: props.dailyUsage,
+      hourlyUsage: props.hourlyUsage,
       groups: props.groups,
       totals: props.totals,
       currentGroup: props.currentGroup,
@@ -73,6 +75,7 @@ class LevReport extends React.Component {
         </CountDiv>
       </RelativeParent>
       <LevUsage dates={this.state.dates} datasets={this.state.datasets}/>
+      <HourlyUsage traces={this.state.hourlyUsage} />
       <UsageByGroup datasets={this.state.datasets} groups={this.state.groups} totals={this.state.totals}/>
     </LevPage>;
   }
