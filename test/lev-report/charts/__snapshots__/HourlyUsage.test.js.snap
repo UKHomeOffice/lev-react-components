@@ -1,0 +1,1103 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HourlyUsage component renders correctly 1`] = `
+<div
+  className="VictoryContainer"
+  style={
+    Object {
+      "height": "100%",
+      "pointerEvents": "none",
+      "position": "relative",
+      "touchAction": "none",
+      "userSelect": "none",
+      "width": "100%",
+    }
+  }
+>
+  <svg
+    aria-labelledby="victory-container-1-title victory-container-1-desc"
+    height={250}
+    role="img"
+    style={
+      Object {
+        "height": "auto",
+        "pointerEvents": "all",
+        "width": "100%",
+      }
+    }
+    viewBox="0 0 300 250"
+    width={300}
+  >
+    <g
+      role="presentation"
+    >
+      <line
+        role="presentation"
+        shapeRendering="auto"
+        style={
+          Object {
+            "fill": "transparent",
+            "stroke": "#90A4AE",
+            "strokeLinecap": "round",
+            "strokeLinejoin": "round",
+            "strokeWidth": 2,
+          }
+        }
+        vectorEffect="non-scaling-stroke"
+        x1={50}
+        x2={295}
+        y1={200}
+        y2={200}
+      />
+      <g
+        role="presentation"
+      >
+        <line
+          role="presentation"
+          shapeRendering="auto"
+          style={
+            Object {
+              "fill": "none",
+              "pointerEvents": "painted",
+              "stroke": "#ECEFF1",
+              "strokeDasharray": "10, 5",
+              "strokeLinecap": "round",
+              "strokeLinejoin": "round",
+            }
+          }
+          vectorEffect="non-scaling-stroke"
+          x1={50}
+          x2={50}
+          y1={200}
+          y2={10}
+        />
+        <line
+          role="presentation"
+          shapeRendering="auto"
+          style={
+            Object {
+              "fill": "transparent",
+              "size": 5,
+              "stroke": "#90A4AE",
+              "strokeLinecap": "round",
+              "strokeLinejoin": "round",
+              "strokeWidth": 1,
+            }
+          }
+          vectorEffect="non-scaling-stroke"
+          x1={50}
+          x2={50}
+          y1={200}
+          y2={205}
+        />
+        <text
+          direction="inherit"
+          dx={0}
+          dy={8.55}
+          x={50}
+          y={213}
+        >
+          <tspan
+            dx={0}
+            style={
+              Object {
+                "fill": "#455A64",
+                "fontFamily": "'Roboto', 'Helvetica Neue', Helvetica, sans-serif",
+                "fontSize": 10,
+                "letterSpacing": "normal",
+                "padding": 8,
+                "stroke": "transparent",
+                "strokeWidth": 0,
+              }
+            }
+            textAnchor="middle"
+            x={50}
+          >
+            00
+          </tspan>
+        </text>
+      </g>
+      <g
+        role="presentation"
+      >
+        <line
+          role="presentation"
+          shapeRendering="auto"
+          style={
+            Object {
+              "fill": "none",
+              "pointerEvents": "painted",
+              "stroke": "#ECEFF1",
+              "strokeDasharray": "10, 5",
+              "strokeLinecap": "round",
+              "strokeLinejoin": "round",
+            }
+          }
+          vectorEffect="non-scaling-stroke"
+          x1={78.14030807500957}
+          x2={78.14030807500957}
+          y1={200}
+          y2={10}
+        />
+        <line
+          role="presentation"
+          shapeRendering="auto"
+          style={
+            Object {
+              "fill": "transparent",
+              "size": 5,
+              "stroke": "#90A4AE",
+              "strokeLinecap": "round",
+              "strokeLinejoin": "round",
+              "strokeWidth": 1,
+            }
+          }
+          vectorEffect="non-scaling-stroke"
+          x1={78.14030807500957}
+          x2={78.14030807500957}
+          y1={200}
+          y2={205}
+        />
+        <text
+          direction="inherit"
+          dx={0}
+          dy={8.55}
+          x={78.14030807500957}
+          y={213}
+        >
+          <tspan
+            dx={0}
+            style={
+              Object {
+                "fill": "#455A64",
+                "fontFamily": "'Roboto', 'Helvetica Neue', Helvetica, sans-serif",
+                "fontSize": 10,
+                "letterSpacing": "normal",
+                "padding": 8,
+                "stroke": "transparent",
+                "strokeWidth": 0,
+              }
+            }
+            textAnchor="middle"
+            x={78.14030807500957}
+          >
+            03
+          </tspan>
+        </text>
+      </g>
+      <g
+        role="presentation"
+      >
+        <line
+          role="presentation"
+          shapeRendering="auto"
+          style={
+            Object {
+              "fill": "none",
+              "pointerEvents": "painted",
+              "stroke": "#ECEFF1",
+              "strokeDasharray": "10, 5",
+              "strokeLinecap": "round",
+              "strokeLinejoin": "round",
+            }
+          }
+          vectorEffect="non-scaling-stroke"
+          x1={106.28061615001914}
+          x2={106.28061615001914}
+          y1={200}
+          y2={10}
+        />
+        <line
+          role="presentation"
+          shapeRendering="auto"
+          style={
+            Object {
+              "fill": "transparent",
+              "size": 5,
+              "stroke": "#90A4AE",
+              "strokeLinecap": "round",
+              "strokeLinejoin": "round",
+              "strokeWidth": 1,
+            }
+          }
+          vectorEffect="non-scaling-stroke"
+          x1={106.28061615001914}
+          x2={106.28061615001914}
+          y1={200}
+          y2={205}
+        />
+        <text
+          direction="inherit"
+          dx={0}
+          dy={8.55}
+          x={106.28061615001914}
+          y={213}
+        >
+          <tspan
+            dx={0}
+            style={
+              Object {
+                "fill": "#455A64",
+                "fontFamily": "'Roboto', 'Helvetica Neue', Helvetica, sans-serif",
+                "fontSize": 10,
+                "letterSpacing": "normal",
+                "padding": 8,
+                "stroke": "transparent",
+                "strokeWidth": 0,
+              }
+            }
+            textAnchor="middle"
+            x={106.28061615001914}
+          >
+            06
+          </tspan>
+        </text>
+      </g>
+      <g
+        role="presentation"
+      >
+        <line
+          role="presentation"
+          shapeRendering="auto"
+          style={
+            Object {
+              "fill": "none",
+              "pointerEvents": "painted",
+              "stroke": "#ECEFF1",
+              "strokeDasharray": "10, 5",
+              "strokeLinecap": "round",
+              "strokeLinejoin": "round",
+            }
+          }
+          vectorEffect="non-scaling-stroke"
+          x1={134.4209242250287}
+          x2={134.4209242250287}
+          y1={200}
+          y2={10}
+        />
+        <line
+          role="presentation"
+          shapeRendering="auto"
+          style={
+            Object {
+              "fill": "transparent",
+              "size": 5,
+              "stroke": "#90A4AE",
+              "strokeLinecap": "round",
+              "strokeLinejoin": "round",
+              "strokeWidth": 1,
+            }
+          }
+          vectorEffect="non-scaling-stroke"
+          x1={134.4209242250287}
+          x2={134.4209242250287}
+          y1={200}
+          y2={205}
+        />
+        <text
+          direction="inherit"
+          dx={0}
+          dy={8.55}
+          x={134.4209242250287}
+          y={213}
+        >
+          <tspan
+            dx={0}
+            style={
+              Object {
+                "fill": "#455A64",
+                "fontFamily": "'Roboto', 'Helvetica Neue', Helvetica, sans-serif",
+                "fontSize": 10,
+                "letterSpacing": "normal",
+                "padding": 8,
+                "stroke": "transparent",
+                "strokeWidth": 0,
+              }
+            }
+            textAnchor="middle"
+            x={134.4209242250287}
+          >
+            09
+          </tspan>
+        </text>
+      </g>
+      <g
+        role="presentation"
+      >
+        <line
+          role="presentation"
+          shapeRendering="auto"
+          style={
+            Object {
+              "fill": "none",
+              "pointerEvents": "painted",
+              "stroke": "#ECEFF1",
+              "strokeDasharray": "10, 5",
+              "strokeLinecap": "round",
+              "strokeLinejoin": "round",
+            }
+          }
+          vectorEffect="non-scaling-stroke"
+          x1={162.56123230003828}
+          x2={162.56123230003828}
+          y1={200}
+          y2={10}
+        />
+        <line
+          role="presentation"
+          shapeRendering="auto"
+          style={
+            Object {
+              "fill": "transparent",
+              "size": 5,
+              "stroke": "#90A4AE",
+              "strokeLinecap": "round",
+              "strokeLinejoin": "round",
+              "strokeWidth": 1,
+            }
+          }
+          vectorEffect="non-scaling-stroke"
+          x1={162.56123230003828}
+          x2={162.56123230003828}
+          y1={200}
+          y2={205}
+        />
+        <text
+          direction="inherit"
+          dx={0}
+          dy={8.55}
+          x={162.56123230003828}
+          y={213}
+        >
+          <tspan
+            dx={0}
+            style={
+              Object {
+                "fill": "#455A64",
+                "fontFamily": "'Roboto', 'Helvetica Neue', Helvetica, sans-serif",
+                "fontSize": 10,
+                "letterSpacing": "normal",
+                "padding": 8,
+                "stroke": "transparent",
+                "strokeWidth": 0,
+              }
+            }
+            textAnchor="middle"
+            x={162.56123230003828}
+          >
+            12
+          </tspan>
+        </text>
+      </g>
+      <g
+        role="presentation"
+      >
+        <line
+          role="presentation"
+          shapeRendering="auto"
+          style={
+            Object {
+              "fill": "none",
+              "pointerEvents": "painted",
+              "stroke": "#ECEFF1",
+              "strokeDasharray": "10, 5",
+              "strokeLinecap": "round",
+              "strokeLinejoin": "round",
+            }
+          }
+          vectorEffect="non-scaling-stroke"
+          x1={190.70154037504784}
+          x2={190.70154037504784}
+          y1={200}
+          y2={10}
+        />
+        <line
+          role="presentation"
+          shapeRendering="auto"
+          style={
+            Object {
+              "fill": "transparent",
+              "size": 5,
+              "stroke": "#90A4AE",
+              "strokeLinecap": "round",
+              "strokeLinejoin": "round",
+              "strokeWidth": 1,
+            }
+          }
+          vectorEffect="non-scaling-stroke"
+          x1={190.70154037504784}
+          x2={190.70154037504784}
+          y1={200}
+          y2={205}
+        />
+        <text
+          direction="inherit"
+          dx={0}
+          dy={8.55}
+          x={190.70154037504784}
+          y={213}
+        >
+          <tspan
+            dx={0}
+            style={
+              Object {
+                "fill": "#455A64",
+                "fontFamily": "'Roboto', 'Helvetica Neue', Helvetica, sans-serif",
+                "fontSize": 10,
+                "letterSpacing": "normal",
+                "padding": 8,
+                "stroke": "transparent",
+                "strokeWidth": 0,
+              }
+            }
+            textAnchor="middle"
+            x={190.70154037504784}
+          >
+            15
+          </tspan>
+        </text>
+      </g>
+      <g
+        role="presentation"
+      >
+        <line
+          role="presentation"
+          shapeRendering="auto"
+          style={
+            Object {
+              "fill": "none",
+              "pointerEvents": "painted",
+              "stroke": "#ECEFF1",
+              "strokeDasharray": "10, 5",
+              "strokeLinecap": "round",
+              "strokeLinejoin": "round",
+            }
+          }
+          vectorEffect="non-scaling-stroke"
+          x1={218.8418484500574}
+          x2={218.8418484500574}
+          y1={200}
+          y2={10}
+        />
+        <line
+          role="presentation"
+          shapeRendering="auto"
+          style={
+            Object {
+              "fill": "transparent",
+              "size": 5,
+              "stroke": "#90A4AE",
+              "strokeLinecap": "round",
+              "strokeLinejoin": "round",
+              "strokeWidth": 1,
+            }
+          }
+          vectorEffect="non-scaling-stroke"
+          x1={218.8418484500574}
+          x2={218.8418484500574}
+          y1={200}
+          y2={205}
+        />
+        <text
+          direction="inherit"
+          dx={0}
+          dy={8.55}
+          x={218.8418484500574}
+          y={213}
+        >
+          <tspan
+            dx={0}
+            style={
+              Object {
+                "fill": "#455A64",
+                "fontFamily": "'Roboto', 'Helvetica Neue', Helvetica, sans-serif",
+                "fontSize": 10,
+                "letterSpacing": "normal",
+                "padding": 8,
+                "stroke": "transparent",
+                "strokeWidth": 0,
+              }
+            }
+            textAnchor="middle"
+            x={218.8418484500574}
+          >
+            18
+          </tspan>
+        </text>
+      </g>
+      <g
+        role="presentation"
+      >
+        <line
+          role="presentation"
+          shapeRendering="auto"
+          style={
+            Object {
+              "fill": "none",
+              "pointerEvents": "painted",
+              "stroke": "#ECEFF1",
+              "strokeDasharray": "10, 5",
+              "strokeLinecap": "round",
+              "strokeLinejoin": "round",
+            }
+          }
+          vectorEffect="non-scaling-stroke"
+          x1={246.98215652506696}
+          x2={246.98215652506696}
+          y1={200}
+          y2={10}
+        />
+        <line
+          role="presentation"
+          shapeRendering="auto"
+          style={
+            Object {
+              "fill": "transparent",
+              "size": 5,
+              "stroke": "#90A4AE",
+              "strokeLinecap": "round",
+              "strokeLinejoin": "round",
+              "strokeWidth": 1,
+            }
+          }
+          vectorEffect="non-scaling-stroke"
+          x1={246.98215652506696}
+          x2={246.98215652506696}
+          y1={200}
+          y2={205}
+        />
+        <text
+          direction="inherit"
+          dx={0}
+          dy={8.55}
+          x={246.98215652506696}
+          y={213}
+        >
+          <tspan
+            dx={0}
+            style={
+              Object {
+                "fill": "#455A64",
+                "fontFamily": "'Roboto', 'Helvetica Neue', Helvetica, sans-serif",
+                "fontSize": 10,
+                "letterSpacing": "normal",
+                "padding": 8,
+                "stroke": "transparent",
+                "strokeWidth": 0,
+              }
+            }
+            textAnchor="middle"
+            x={246.98215652506696}
+          >
+            21
+          </tspan>
+        </text>
+      </g>
+      <g
+        role="presentation"
+      >
+        <line
+          role="presentation"
+          shapeRendering="auto"
+          style={
+            Object {
+              "fill": "none",
+              "pointerEvents": "painted",
+              "stroke": "#ECEFF1",
+              "strokeDasharray": "10, 5",
+              "strokeLinecap": "round",
+              "strokeLinejoin": "round",
+            }
+          }
+          vectorEffect="non-scaling-stroke"
+          x1={275.12246460007657}
+          x2={275.12246460007657}
+          y1={200}
+          y2={10}
+        />
+        <line
+          role="presentation"
+          shapeRendering="auto"
+          style={
+            Object {
+              "fill": "transparent",
+              "size": 5,
+              "stroke": "#90A4AE",
+              "strokeLinecap": "round",
+              "strokeLinejoin": "round",
+              "strokeWidth": 1,
+            }
+          }
+          vectorEffect="non-scaling-stroke"
+          x1={275.12246460007657}
+          x2={275.12246460007657}
+          y1={200}
+          y2={205}
+        />
+        <text
+          direction="inherit"
+          dx={0}
+          dy={8.55}
+          x={275.12246460007657}
+          y={213}
+        >
+          <tspan
+            dx={0}
+            style={
+              Object {
+                "fill": "#455A64",
+                "fontFamily": "'Roboto', 'Helvetica Neue', Helvetica, sans-serif",
+                "fontSize": 10,
+                "letterSpacing": "normal",
+                "padding": 8,
+                "stroke": "transparent",
+                "strokeWidth": 0,
+              }
+            }
+            textAnchor="middle"
+            x={275.12246460007657}
+          >
+            24
+          </tspan>
+        </text>
+      </g>
+    </g>
+    <g
+      role="presentation"
+    >
+      <line
+        role="presentation"
+        shapeRendering="auto"
+        style={
+          Object {
+            "fill": "transparent",
+            "stroke": "#90A4AE",
+            "strokeLinecap": "round",
+            "strokeLinejoin": "round",
+            "strokeWidth": 2,
+          }
+        }
+        vectorEffect="non-scaling-stroke"
+        x1={50}
+        x2={50}
+        y1={10}
+        y2={200}
+      />
+      <g
+        role="presentation"
+      >
+        <line
+          role="presentation"
+          shapeRendering="auto"
+          style={
+            Object {
+              "fill": "none",
+              "pointerEvents": "painted",
+              "stroke": "#ECEFF1",
+              "strokeDasharray": "10, 5",
+              "strokeLinecap": "round",
+              "strokeLinejoin": "round",
+            }
+          }
+          vectorEffect="non-scaling-stroke"
+          x1={50}
+          x2={295}
+          y1={156.35935611121715}
+          y2={156.35935611121715}
+        />
+        <line
+          role="presentation"
+          shapeRendering="auto"
+          style={
+            Object {
+              "fill": "transparent",
+              "size": 5,
+              "stroke": "#90A4AE",
+              "strokeLinecap": "round",
+              "strokeLinejoin": "round",
+              "strokeWidth": 1,
+            }
+          }
+          vectorEffect="non-scaling-stroke"
+          x1={50}
+          x2={45}
+          y1={156.35935611121715}
+          y2={156.35935611121715}
+        />
+        <text
+          direction="inherit"
+          dx={0}
+          dy={4.26}
+          x={37}
+          y={156.35935611121715}
+        >
+          <tspan
+            dx={0}
+            style={
+              Object {
+                "fill": "#455A64",
+                "fontFamily": "'Roboto', 'Helvetica Neue', Helvetica, sans-serif",
+                "fontSize": 12,
+                "letterSpacing": "normal",
+                "padding": 8,
+                "stroke": "transparent",
+                "strokeWidth": 0,
+              }
+            }
+            textAnchor="end"
+            x={37}
+          >
+            200
+          </tspan>
+        </text>
+      </g>
+      <g
+        role="presentation"
+      >
+        <line
+          role="presentation"
+          shapeRendering="auto"
+          style={
+            Object {
+              "fill": "none",
+              "pointerEvents": "painted",
+              "stroke": "#ECEFF1",
+              "strokeDasharray": "10, 5",
+              "strokeLinecap": "round",
+              "strokeLinejoin": "round",
+            }
+          }
+          vectorEffect="non-scaling-stroke"
+          x1={50}
+          x2={295}
+          y1={112.71871222243432}
+          y2={112.71871222243432}
+        />
+        <line
+          role="presentation"
+          shapeRendering="auto"
+          style={
+            Object {
+              "fill": "transparent",
+              "size": 5,
+              "stroke": "#90A4AE",
+              "strokeLinecap": "round",
+              "strokeLinejoin": "round",
+              "strokeWidth": 1,
+            }
+          }
+          vectorEffect="non-scaling-stroke"
+          x1={50}
+          x2={45}
+          y1={112.71871222243432}
+          y2={112.71871222243432}
+        />
+        <text
+          direction="inherit"
+          dx={0}
+          dy={4.26}
+          x={37}
+          y={112.71871222243432}
+        >
+          <tspan
+            dx={0}
+            style={
+              Object {
+                "fill": "#455A64",
+                "fontFamily": "'Roboto', 'Helvetica Neue', Helvetica, sans-serif",
+                "fontSize": 12,
+                "letterSpacing": "normal",
+                "padding": 8,
+                "stroke": "transparent",
+                "strokeWidth": 0,
+              }
+            }
+            textAnchor="end"
+            x={37}
+          >
+            400
+          </tspan>
+        </text>
+      </g>
+      <g
+        role="presentation"
+      >
+        <line
+          role="presentation"
+          shapeRendering="auto"
+          style={
+            Object {
+              "fill": "none",
+              "pointerEvents": "painted",
+              "stroke": "#ECEFF1",
+              "strokeDasharray": "10, 5",
+              "strokeLinecap": "round",
+              "strokeLinejoin": "round",
+            }
+          }
+          vectorEffect="non-scaling-stroke"
+          x1={50}
+          x2={295}
+          y1={69.07806833365146}
+          y2={69.07806833365146}
+        />
+        <line
+          role="presentation"
+          shapeRendering="auto"
+          style={
+            Object {
+              "fill": "transparent",
+              "size": 5,
+              "stroke": "#90A4AE",
+              "strokeLinecap": "round",
+              "strokeLinejoin": "round",
+              "strokeWidth": 1,
+            }
+          }
+          vectorEffect="non-scaling-stroke"
+          x1={50}
+          x2={45}
+          y1={69.07806833365146}
+          y2={69.07806833365146}
+        />
+        <text
+          direction="inherit"
+          dx={0}
+          dy={4.26}
+          x={37}
+          y={69.07806833365146}
+        >
+          <tspan
+            dx={0}
+            style={
+              Object {
+                "fill": "#455A64",
+                "fontFamily": "'Roboto', 'Helvetica Neue', Helvetica, sans-serif",
+                "fontSize": 12,
+                "letterSpacing": "normal",
+                "padding": 8,
+                "stroke": "transparent",
+                "strokeWidth": 0,
+              }
+            }
+            textAnchor="end"
+            x={37}
+          >
+            600
+          </tspan>
+        </text>
+      </g>
+      <g
+        role="presentation"
+      >
+        <line
+          role="presentation"
+          shapeRendering="auto"
+          style={
+            Object {
+              "fill": "none",
+              "pointerEvents": "painted",
+              "stroke": "#ECEFF1",
+              "strokeDasharray": "10, 5",
+              "strokeLinecap": "round",
+              "strokeLinejoin": "round",
+            }
+          }
+          vectorEffect="non-scaling-stroke"
+          x1={50}
+          x2={295}
+          y1={25.437424444868633}
+          y2={25.437424444868633}
+        />
+        <line
+          role="presentation"
+          shapeRendering="auto"
+          style={
+            Object {
+              "fill": "transparent",
+              "size": 5,
+              "stroke": "#90A4AE",
+              "strokeLinecap": "round",
+              "strokeLinejoin": "round",
+              "strokeWidth": 1,
+            }
+          }
+          vectorEffect="non-scaling-stroke"
+          x1={50}
+          x2={45}
+          y1={25.437424444868633}
+          y2={25.437424444868633}
+        />
+        <text
+          direction="inherit"
+          dx={0}
+          dy={4.26}
+          x={37}
+          y={25.437424444868633}
+        >
+          <tspan
+            dx={0}
+            style={
+              Object {
+                "fill": "#455A64",
+                "fontFamily": "'Roboto', 'Helvetica Neue', Helvetica, sans-serif",
+                "fontSize": 12,
+                "letterSpacing": "normal",
+                "padding": 8,
+                "stroke": "transparent",
+                "strokeWidth": 0,
+              }
+            }
+            textAnchor="end"
+            x={37}
+          >
+            800
+          </tspan>
+        </text>
+      </g>
+    </g>
+    <g
+      clipPath="url(#victory-clip-2)"
+      style={
+        Object {
+          "height": "100%",
+          "userSelect": "none",
+          "width": "100%",
+        }
+      }
+    >
+      <defs>
+        <clipPath
+          id="victory-clip-2"
+        >
+          <rect
+            height={190}
+            role="presentation"
+            shapeRendering="auto"
+            vectorEffect="non-scaling-stroke"
+            width={245}
+            x={50}
+            y={10}
+          />
+        </clipPath>
+      </defs>
+      <path
+        d="M50,200C53.12670089722329,199.9941406745828,56.253401794446575,199.9882813491656,59.38010269166986,200C62.50680358889315,200.0117186508344,65.63350448611642,200.04101527792042,68.76020538333971,200C71.886906280563,199.95898472207958,75.01360717778628,199.84765753915266,78.14030807500957,200C81.26700897223286,200.15234246084734,84.39370986945613,200.5683545654689,87.52041076667942,200C90.6471116639027,199.4316454345311,93.77381256112601,197.87892419897173,96.90051345834928,197.81796780556087C100.02721435557255,197.75701141215,103.15391525279587,199.18781986088769,106.28061615001914,194.76312273334608C109.40731704724242,190.33842560580447,112.5340179444657,180.05822290198367,115.66071884168898,167.26951708341286C118.78741973891225,154.48081126484206,121.91412063613558,139.18360233152117,125.04082153335884,124.71988929184958C128.1675224305821,110.256176252178,131.2942233278054,96.62595910615565,134.4209242250287,83.47948081694983C137.547625122252,70.33300252774401,140.6743260194753,57.6702630953548,143.80102691669856,52.058217217026154C146.92772781392182,46.44617133869751,150.0544287111451,47.88481901442946,153.1811296083684,43.330088439269595C156.30783050559168,38.77535786410973,159.434531402815,28.22724903805805,162.56123230003828,29.801488833746916C165.68793319726157,31.37572862943578,168.81463409448483,45.07231704686519,171.94133499170812,53.80384297257747C175.0680358889314,62.535368898289754,178.1947367861547,66.30183233228496,181.32143768337795,68.42345867531974C184.4481385806012,70.54508501835451,187.57483947782453,71.02187427042884,190.70154037504784,69.5144747725393C193.82824127227116,68.00707527464976,196.9549421694944,64.51548702679644,200.08164306671767,73.87853916141758C203.20834396394096,83.24159129603872,206.33504486116422,105.4592838131343,209.46174575838754,117.51918305020044C212.58844665561085,129.57908228726657,215.71514755283417,131.48118824430313,218.8418484500574,139.33950499459186C221.96854934728063,147.1978217448806,225.09525024450394,161.01234928842152,228.22195114172726,170.32436215562768C231.34865203895058,179.63637502283385,234.4753529361738,184.44587321370508,237.6020538333971,188.43522936947255C240.72875473062038,192.42458552524002,243.85545562784364,195.59379964590374,246.98215652506696,197.16335814722913C250.10885742229027,198.73291664855452,253.23555831951353,198.7028195305417,256.3622592167368,198.90898390278045C259.48896011396005,199.1151482750192,262.61566101118336,199.55757413750962,265.7423619084067,200"
+        role="presentation"
+        shapeRendering="auto"
+        style={
+          Object {
+            "fill": "transparent",
+            "opacity": 1,
+            "stroke": "#455A64",
+            "strokeWidth": 2,
+          }
+        }
+      />
+    </g>
+    <g
+      clipPath="url(#victory-clip-3)"
+      style={
+        Object {
+          "height": "100%",
+          "userSelect": "none",
+          "width": "100%",
+        }
+      }
+    >
+      <defs>
+        <clipPath
+          id="victory-clip-3"
+        >
+          <rect
+            height={190}
+            role="presentation"
+            shapeRendering="auto"
+            vectorEffect="non-scaling-stroke"
+            width={245}
+            x={50}
+            y={10}
+          />
+        </clipPath>
+      </defs>
+      <path
+        d="M50,200C53.12670089722329,199.99895349696442,56.253401794446575,199.9979069939288,59.38010269166986,200C62.50680358889315,200.0020930060712,65.63350448611642,200.0073255212492,68.76020538333971,200C71.886906280563,199.9926744787508,75.01360717778628,199.97279092107448,78.14030807500957,200C81.26700897223286,200.02720907892552,84.39370986945613,200.10151079445285,87.52041076667942,200C90.6471116639027,199.89848920554715,93.77381256112601,199.62116590111404,96.90051345834928,199.34539034166824C100.02721435557255,199.06961478222243,103.15391525279587,198.795386967764,106.28061615001914,198.47257746389258C109.40731704724242,198.14976796002117,112.5340179444657,197.7783767667366,115.66071884168898,196.7269517083413C118.78741973891225,195.67552664994597,121.91412063613558,193.94406772643998,125.04082153335884,192.362887319463C128.1675224305821,190.78170691248602,131.2942233278054,189.35080502203817,134.4209242250287,188.21702615002863C137.547625122252,187.0832472780191,140.6743260194753,186.24659142444776,143.80102691669856,185.38038429725776C146.92772781392182,184.51417717006777,150.0544287111451,183.6184187692591,153.1811296083684,182.9801488833747C156.30783050559168,182.3418789974903,159.434531402815,181.96109762653015,162.56123230003828,182.54374244448687C165.68793319726157,183.1263872624436,168.81463409448483,184.67245826931722,171.94133499170812,185.38038429725776C175.0680358889314,186.0883103251983,178.1947367861547,185.95809137420582,181.32143768337795,186.25319717503342C184.4481385806012,186.54830297586102,187.57483947782453,187.2687335285087,190.70154037504784,187.34421327225297C193.82824127227116,187.41969301599724,196.9549421694944,186.85022195083812,200.08164306671767,187.56241649169687C203.20834396394096,188.2746110325556,206.33504486116422,190.26847117943214,209.46174575838754,191.92648088057518C212.58844665561085,193.58449058171823,215.71514755283417,194.90664983712787,218.8418484500574,195.63593561112174C221.96854934728063,196.3652213851156,225.09525024450394,196.50163367769366,228.22195114172726,197.16335814722913C231.34865203895058,197.8250826167646,234.4753529361738,199.01211926325752,237.6020538333971,199.56359356111219C240.72875473062038,200.11506785896685,243.85545562784364,200.0309798081834,246.98215652506696,200C250.10885742229027,199.9690201918166,253.23555831951353,199.9911486262333,256.3622592167368,200C259.48896011396005,200.0088513737667,262.61566101118336,200.00442568688334,265.7423619084067,200"
+        role="presentation"
+        shapeRendering="auto"
+        style={
+          Object {
+            "fill": "transparent",
+            "opacity": 1,
+            "stroke": "#455A64",
+            "strokeWidth": 2,
+          }
+        }
+      />
+    </g>
+    <g
+      clipPath="url(#victory-clip-4)"
+      style={
+        Object {
+          "height": "100%",
+          "userSelect": "none",
+          "width": "100%",
+        }
+      }
+    >
+      <defs>
+        <clipPath
+          id="victory-clip-4"
+        >
+          <rect
+            height={190}
+            role="presentation"
+            shapeRendering="auto"
+            vectorEffect="non-scaling-stroke"
+            width={245}
+            x={50}
+            y={10}
+          />
+        </clipPath>
+      </defs>
+      <path
+        d="M50,200C53.12670089722329,199.99551576669182,56.253401794446575,199.99103153338365,59.38010269166986,200C62.50680358889315,200.00896846661635,65.63350448611642,200.03138963315723,68.76020538333971,200C71.886906280563,199.96861036684277,75.01360717778628,199.88340993398745,78.14030807500957,200C81.26700897223286,200.11659006601255,84.39370986945613,200.43497063089293,87.52041076667942,200C90.6471116639027,199.56502936910707,93.77381256112601,198.37670754244093,96.90051345834928,198.25437424444868C100.02721435557255,198.13204094645644,103.15391525279587,199.07569617713807,106.28061615001914,195.82296694207366C109.40731704724242,192.57023770700926,112.5340179444657,185.1211240061988,115.66071884168898,175.68592697624956C118.78741973891225,166.2507299463003,121.91412063613558,154.82944958721225,125.04082153335884,144.04646015688198C128.1675224305821,133.2634707265517,131.2942233278054,123.11877222497922,134.4209242250287,113.40449376925805C137.547625122252,103.69021531353688,140.6743260194753,94.40635690366707,143.80102691669856,90.15026495423517C146.92772781392182,85.89417300480326,150.0544287111451,86.66584751580933,153.1811296083684,83.23010570901391C156.30783050559168,79.79436390221849,159.434531402815,72.15120577762151,162.56123230003828,73.44213272252976C165.68793319726157,74.73305966743801,168.81463409448483,84.95807168185146,171.94133499170812,91.39714049391468C175.0680358889314,97.83620930597789,178.1947367861547,100.48933491569089,181.32143768337795,102.08909824666648C184.4481385806012,103.68886157764207,187.57483947782453,104.2352626298802,190.70154037504784,103.18011434388606C193.82824127227116,102.12496605789192,196.9549421694944,99.4682684336655,200.08164306671767,106.3596469700688C203.20834396394096,113.25102550647209,206.33504486116422,129.6904802035051,209.46174575838754,138.77841100173606C212.58844665561085,147.86634179996702,215.71514755283417,149.60274869939587,218.8418484500574,155.42419945645753C221.96854934728063,161.24565021351918,225.09525024450394,171.15214482821355,228.22195114172726,177.99264672465665C231.34865203895058,184.83314862109975,234.4753529361738,188.6076577992915,237.6020538333971,191.6147619956553C240.72875473062038,194.6218661920191,243.85545562784364,196.86156540655503,246.98215652506696,197.9738272480208C250.10885742229027,199.08608908948656,253.23555831951353,199.07091355788214,256.3622592167368,199.22070278770033C259.48896011396005,199.37049201751853,262.61566101118336,199.68524600875926,265.7423619084067,200"
+        role="presentation"
+        shapeRendering="auto"
+        style={
+          Object {
+            "fill": "transparent",
+            "opacity": 1,
+            "stroke": "#455A64",
+            "strokeWidth": 2,
+          }
+        }
+      />
+    </g>
+  </svg>
+  <div
+    style={
+      Object {
+        "height": "auto",
+        "left": 0,
+        "position": "absolute",
+        "top": 0,
+        "width": "100%",
+        "zIndex": 99,
+      }
+    }
+  >
+    <svg
+      height={250}
+      style={
+        Object {
+          "height": "auto",
+          "overflow": "visible",
+          "width": "100%",
+        }
+      }
+      viewBox="0 0 300 250"
+      width={300}
+    />
+  </div>
+</div>
+`;
