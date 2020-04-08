@@ -1,2 +1,5 @@
 dist/
 node_modules/
+
+# any snapshot component previews
+**/__snapshots__/*.html

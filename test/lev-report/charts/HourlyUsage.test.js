@@ -1,6 +1,7 @@
 import React from 'react';
 import HourlyUsage from '../../../src/lev-report/charts/HourlyUsage';
 import renderer from 'react-test-renderer';
+import { renderToString } from "react-dom/server";
 
 const data = [
 	{ name: 'weekday', data: [
@@ -34,5 +35,22 @@ describe('HourlyUsage component', () => {
 			.toJSON();
 		expect(tree).toMatchSnapshot();
 		success = true;
+	});
+
+	afterAll(() => {
+		if (success && process.argv.includes('--visualise')) {
+			const html = `<html>
+			<head>
+					<title>Component Preview</title>
+					<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+			</head>
+			<body style="margin:0;">
+					<div id="app">
+						 ${renderToString(<HourlyUsage traces={data}/>)}
+					</div>
+			</body>
+			</html>`;
+			require('fs').writeFileSync('test/lev-report/charts/__snapshots__/HourlyUsage.html', html);
+		}
 	});
 });

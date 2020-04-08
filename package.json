@@ -6,6 +6,7 @@
   "module": "dist/index.esm.js",
   "scripts": {
     "test": "jest",
+    "visualise": "npm test -- -- . --visualise",
     "build": "rollup -c rollup.config.js",
     "prepublish": "npm run build",
     "dev": "nodemon -w src/ -x npm run build"
