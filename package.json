@@ -1,12 +1,13 @@
 {
   "name": "lev-react-components",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "description": "React.js components for use in the LEV project",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "scripts": {
     "test": "jest",
     "visualise": "npm test -- -- . --visualise",
+    "watch": "npm test -- --watch",
     "build": "rollup -c rollup.config.js",
     "prepublish": "npm run build",
     "dev": "nodemon -w src/ -x npm run build"
@@ -35,7 +36,6 @@
     "govuk-react": "^0.7.1",
     "jest": "^25.1.0",
     "moment": "^2.24.0",
-    "node-run-cmd": "^1.0.1",
     "nodemon": "^2.0.3",
     "react": "^16.8.6",
     "react-dom": "^16.13.0",
