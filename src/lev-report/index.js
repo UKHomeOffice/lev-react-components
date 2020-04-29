@@ -14,7 +14,7 @@ const RelativeParent = styled.div`
 const CountDiv = styled.div`
   position: absolute;
   right: 0;
-  top: 0;
+  bottom: 0;
 `;
 
 class LevReport extends React.Component {
@@ -31,6 +31,7 @@ class LevReport extends React.Component {
       groups: props.groups,
       totals: props.totals,
       currentGroup: props.currentGroup,
+      withoutGroups: props.withoutGroups,
       total: props.total,
     };
   }
@@ -50,6 +51,7 @@ class LevReport extends React.Component {
   }
 
   render() {
+    console.log(this.state);
     return <LevPage
       title="LEV Report"
       topnav={{
@@ -67,11 +69,13 @@ class LevReport extends React.Component {
           updateTo={this.updateTo.bind(this)}
           groups={this.state.groups}
           currentGroup={this.state.currentGroup}
+          withoutGroups={this.state.withoutGroups}
         />
         <CountDiv>
           <UsageCounter count={this.state.total}
                         from={this.state.from} to={this.state.to}
-                        group={this.state.currentGroup}/>
+                        group={this.state.currentGroup}
+                        withoutGroups={this.state.withoutGroups}/>
         </CountDiv>
       </RelativeParent>
       <LevUsage dates={this.state.dates} datasets={this.state.datasets}/>
