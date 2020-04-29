@@ -20,6 +20,7 @@ const StyledDatePicker = styled.div`
   margin-left: 0px;
   max-width: 15em;
   min-width: 5em;
+  width: 13em;
 
   span {
     padding-right: 1em;
