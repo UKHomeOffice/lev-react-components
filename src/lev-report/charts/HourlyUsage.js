@@ -23,9 +23,9 @@ const HourlyUsage = ({ traces }) => traces && traces.length &&
 	{traces.map(t => <VictoryLine
 		key={t.name}
 		name={t.name}
-		colorScale="cool"
 		interpolation="natural"
 		data={t.data}
+		style={{ data: { stroke: t.colour || 'grey' } }}
 		x="hour"
 		y="count"
 	/>)}
