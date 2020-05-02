@@ -51,7 +51,6 @@ class LevReport extends React.Component {
   }
 
   render() {
-    console.log(this.state);
     return <LevPage
       title="LEV Report"
       topnav={{
