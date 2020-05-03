@@ -1,9 +1,9 @@
 import React from 'react';
-import HourlyUsage from '../../../src/lev-report/charts/HourlyUsage';
+import { default as HourlyUsage, ticks, max, sort } from '../../../src/lev-report/charts/HourlyUsage';
 import renderer from 'react-test-renderer';
 import { renderToString } from "react-dom/server";
 
-const data = [
+const traces = [
 	{ name: 'weekday', data: [
 		{ hour: 0, count: 0 }, { hour: 1, count: 0 }, { hour: 2, count: 0 }, { hour: 3, count: 0 }, { hour: 4, count: 0 },
 		{ hour: 5, count: 10 }, { hour: 6, count: 24 }, { hour: 7, count: 150 }, { hour: 8, count: 345 },
@@ -23,34 +23,50 @@ const data = [
 		]
 	}
 ];
-data[2] = { name: 'average', data: data[0].data.map(
-	({hour, count}, i) => ({ hour, count: ((count*5) + (data[1].data[i].count*2)) / 7 })
+traces[2] = { name: 'average', data: traces[0].data.map(
+	({hour, count}, i) => ({ hour, count: ((count*5) + (traces[1].data[i].count*2)) / 7 })
 ) };
-let success = false;
 
-describe('HourlyUsage component', () => {
-	it('renders correctly', () => {
-		const tree = renderer
-			.create(<HourlyUsage traces={data} />)
-			.toJSON();
-		expect(tree).toMatchSnapshot();
-		success = true;
+describe('HourlyUsage', () => {
+	describe('helper function', () => {
+		describe('ticks', () =>{
+			it('should return an array of numbers', () => expect(ticks).toStrictEqual([0, 3, 6, 9, 12, 15, 18, 21, 24]));
+		});
+		describe('max', () => {
+			it('should take a data list and return the highest count', () => {
+				expect(max(traces[0].data)).toBe(780);
+				expect(max(traces[1].data)).toBe(80);
+			});
+		});
+		describe('sort', () => {
+			it('should order the traces according to their data', () =>
+				expect(sort([{high: 3}, {high: 7}, {high: 2}])).toStrictEqual([{high: 7}, {high: 3}, {high: 2}]));
+		});
 	});
 
-	afterAll(() => {
-		if (success && process.argv.includes('--visualise')) {
-			const html = `<html>
+	describe('component', () => {
+		it('renders correctly', () => {
+			const tree = renderer
+					.create(<HourlyUsage traces={traces}/>)
+					.toJSON();
+			expect(tree).toMatchSnapshot();
+		});
+
+		afterAll(() => {
+			if (process.argv.includes('--visualise')) {
+				const html = `<html>
 			<head>
 					<title>Component Preview</title>
 					<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 			</head>
 			<body style="margin:0;">
 					<div id="app">
-						 ${renderToString(<HourlyUsage traces={data}/>)}
+						 ${renderToString(<HourlyUsage traces={traces}/>)}
 					</div>
 			</body>
 			</html>`;
-			require('fs').writeFileSync('test/lev-report/charts/__snapshots__/HourlyUsage.html', html);
-		}
+				require('fs').writeFileSync('test/lev-report/charts/__snapshots__/HourlyUsage.html', html);
+			}
+		});
 	});
 });

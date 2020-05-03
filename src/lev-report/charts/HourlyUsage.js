@@ -1,8 +1,9 @@
 import React from 'react';
-import { VictoryAxis, VictoryChart, VictoryLabel, VictoryLine, VictoryTheme } from 'victory';
+import { VictoryAxis, VictoryChart, VictoryLegend, VictoryLine, VictoryTheme } from 'victory';
 
-const hours = Array.from({ length: 25 }, (_, h) => h);
-const ticks = hours.filter(n => !(n % 3));
+export const ticks = Array.from({ length: 25 }, (_, h) => h).filter(n => !(n % 3));
+export const max = a => Math.max(...a.map(l => l.count));
+export const sort = a => a.sort((a1, a2) => a2.high - a1.high);
 
 const HourlyUsage = ({ traces }) => traces && traces.length &&
 <VictoryChart
@@ -20,6 +21,17 @@ const HourlyUsage = ({ traces }) => traces && traces.length &&
 		style={{ tickLabels: { fontSize: 10 } }}
 	/>
 	<VictoryAxis dependentAxis />
+	<VictoryLegend
+		x={50} y={15}
+		orientation="vertical"
+		gutter={20}
+		style={{ right: 0 }}
+		data={sort(traces.map(({ name, data, colour }) => ({
+			name,
+			labels: { fill: colour || 'grey' }, symbol: { fill: 'none' },
+			high: max(data)
+		})))}
+	/>
 	{traces.map(t => <VictoryLine
 		key={t.name}
 		name={t.name}

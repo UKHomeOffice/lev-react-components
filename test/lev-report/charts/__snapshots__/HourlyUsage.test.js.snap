@@ -956,6 +956,142 @@ exports[`HourlyUsage component renders correctly 1`] = `
         </text>
       </g>
     </g>
+    <g>
+      <rect
+        height={73.80000000000001}
+        role="presentation"
+        shapeRendering="auto"
+        style={
+          Object {
+            "fill": "none",
+          }
+        }
+        vectorEffect="non-scaling-stroke"
+        width={85.24290657439445}
+        x={50}
+        y={15}
+      />
+      <path
+        d="M 62, 27
+      m -4.8, 0
+      a 4.8, 4.8 0 1,0 9.6,0
+      a 4.8, 4.8 0 1,0 -9.6,0"
+        role="presentation"
+        shapeRendering="auto"
+        style={
+          Object {
+            "fill": "none",
+            "type": "circle",
+          }
+        }
+      />
+      <path
+        d="M 62, 51.6
+      m -4.8, 0
+      a 4.8, 4.8 0 1,0 9.6,0
+      a 4.8, 4.8 0 1,0 -9.6,0"
+        role="presentation"
+        shapeRendering="auto"
+        style={
+          Object {
+            "fill": "none",
+            "type": "circle",
+          }
+        }
+      />
+      <path
+        d="M 62, 76.2
+      m -4.8, 0
+      a 4.8, 4.8 0 1,0 9.6,0
+      a 4.8, 4.8 0 1,0 -9.6,0"
+        role="presentation"
+        shapeRendering="auto"
+        style={
+          Object {
+            "fill": "none",
+            "type": "circle",
+          }
+        }
+      />
+      <text
+        direction="inherit"
+        dx={0}
+        dy={4.26}
+        x={76.4}
+        y={27}
+      >
+        <tspan
+          dx={0}
+          style={
+            Object {
+              "fill": "grey",
+              "fontFamily": "'Roboto', 'Helvetica Neue', Helvetica, sans-serif",
+              "fontSize": 12,
+              "letterSpacing": "normal",
+              "padding": 8,
+              "stroke": "transparent",
+              "strokeWidth": 0,
+            }
+          }
+          textAnchor="start"
+          x={76.4}
+        >
+          weekday
+        </tspan>
+      </text>
+      <text
+        direction="inherit"
+        dx={0}
+        dy={4.26}
+        x={76.4}
+        y={51.6}
+      >
+        <tspan
+          dx={0}
+          style={
+            Object {
+              "fill": "grey",
+              "fontFamily": "'Roboto', 'Helvetica Neue', Helvetica, sans-serif",
+              "fontSize": 12,
+              "letterSpacing": "normal",
+              "padding": 8,
+              "stroke": "transparent",
+              "strokeWidth": 0,
+            }
+          }
+          textAnchor="start"
+          x={76.4}
+        >
+          average
+        </tspan>
+      </text>
+      <text
+        direction="inherit"
+        dx={0}
+        dy={4.26}
+        x={76.4}
+        y={76.2}
+      >
+        <tspan
+          dx={0}
+          style={
+            Object {
+              "fill": "grey",
+              "fontFamily": "'Roboto', 'Helvetica Neue', Helvetica, sans-serif",
+              "fontSize": 12,
+              "letterSpacing": "normal",
+              "padding": 8,
+              "stroke": "transparent",
+              "strokeWidth": 0,
+            }
+          }
+          textAnchor="start"
+          x={76.4}
+        >
+          weekend
+        </tspan>
+      </text>
+    </g>
     <g
       clipPath="url(#victory-clip-2)"
       style={
