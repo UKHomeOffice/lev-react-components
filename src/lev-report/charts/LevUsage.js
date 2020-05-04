@@ -2,9 +2,6 @@ const moment = require('moment');
 import React from 'react';
 import { VictoryAxis, VictoryBar, VictoryChart, VictoryLabel, VictoryStack, VictoryTheme } from 'victory';
 
-const SHORT_DATE = 'D/M/YY';
-const SERVER_FORMAT = 'YYYY-MM-DD';
-
 const days = t => moment(t).format('Do MMM');
 const qtr  = t => {
   const m = moment(t);
@@ -24,15 +21,16 @@ const CustomLabel = ({ freq, ...props }) => (freq < 33) || (freq > 150) ?
   <g transform={`rotate(-45 ${props.x} ${1.1 * props.y})`}><VictoryLabel { ...props } /></g> :
   <VictoryLabel { ...props } />;
 
-const datatypeBar = data => data && data.length && <VictoryBar
-  data={data}
+const datatypeBar = ({ name, dailyUsage }) => dailyUsage && dailyUsage.length && <VictoryBar
+  key={name}
+  data={dailyUsage}
   x="date"
   y="usage"
   barRatio={0.9}
   alignment="start"
 /> || null;
 
-const LevUsage = ({ datasets, dates, ...props }) => datasets && datasets.length &&
+const LevUsage = ({ datasets, dates }) => datasets && datasets.length &&
 <VictoryChart
   padding={{ top: 10, bottom: 50, left: 50, right: 5 }}
   domainPadding={20}
@@ -53,7 +51,7 @@ const LevUsage = ({ datasets, dates, ...props }) => datasets && datasets.length 
     colorScale="cool"
     barRatio={0.9}
   >
-    {datasets.map(d => datatypeBar(d.dailyUsage))}
+    {datasets.map(datatypeBar)}
   </VictoryStack>
 </VictoryChart> || 'No data was found';
 
