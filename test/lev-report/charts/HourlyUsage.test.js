@@ -53,7 +53,7 @@ describe('HourlyUsage', () => {
 		});
 
 		afterAll(() => {
-			if (process.argv.includes('--visualise')) {
+			if (process.env.VISUALISE) {
 				const html = `<html>
 			<head>
 					<title>Component Preview</title>
