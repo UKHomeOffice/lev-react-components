@@ -11,12 +11,6 @@ const RelativeParent = styled.div`
   position: relative;
 `;
 
-const CountDiv = styled.div`
-  position: absolute;
-  right: 0;
-  bottom: 0;
-`;
-
 class LevReport extends React.Component {
   constructor(props) {
     super(props);
@@ -70,12 +64,10 @@ class LevReport extends React.Component {
           currentGroup={this.state.currentGroup}
           withoutGroups={this.state.withoutGroups}
         />
-        <CountDiv>
-          <UsageCounter count={this.state.total}
-                        from={this.state.from} to={this.state.to}
-                        group={this.state.currentGroup}
-                        withoutGroups={this.state.withoutGroups}/>
-        </CountDiv>
+        <UsageCounter count={this.state.total}
+                      from={this.state.from} to={this.state.to}
+                      group={this.state.currentGroup}
+                      withoutGroups={this.state.withoutGroups}/>
       </RelativeParent>
       <LevUsage dates={this.state.dates} datasets={this.state.datasets}/>
       <HourlyUsage traces={this.state.hourlyUsage} />
