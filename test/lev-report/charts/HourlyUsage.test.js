@@ -28,9 +28,9 @@ traces[2] = { name: 'average', data: traces[0].data.map(
 ) };
 
 describe('HourlyUsage', () => {
-	describe('helper function', () => {
-		describe('ticks', () =>{
-			it('should return an array of numbers', () => expect(ticks).toStrictEqual([0, 3, 6, 9, 12, 15, 18, 21, 24]));
+	describe('helper', () => {
+		describe('ticks', () => {
+			it('should be an array of numbers', () => expect(ticks).toStrictEqual([0, 3, 6, 9, 12, 15, 18, 21, 24]));
 		});
 		describe('max', () => {
 			it('should take a data list and return the highest count', () => {
