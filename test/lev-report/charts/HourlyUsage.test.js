@@ -1,7 +1,7 @@
 import React from 'react';
 import { default as HourlyUsage, ticks, max, sort } from '../../../src/lev-report/charts/HourlyUsage';
 import renderer from 'react-test-renderer';
-const visualise = require('../../visualise');
+import visualise from '../../visualise';
 
 const traces = [
 	{ name: 'weekday', data: [
