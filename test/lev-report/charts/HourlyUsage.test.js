@@ -1,7 +1,7 @@
 import React from 'react';
 import { default as HourlyUsage, ticks, max, sort } from '../../../src/lev-report/charts/HourlyUsage';
 import renderer from 'react-test-renderer';
-import { renderToString } from "react-dom/server";
+const visualise = require('../../visualise');
 
 const traces = [
 	{ name: 'weekday', data: [
@@ -46,27 +46,9 @@ describe('HourlyUsage', () => {
 
 	describe('component', () => {
 		it('renders correctly', () => {
-			const tree = renderer
-					.create(<HourlyUsage traces={traces}/>)
-					.toJSON();
+			const tree = renderer.create(<HourlyUsage traces={traces}/>).toJSON();
 			expect(tree).toMatchSnapshot();
 		});
-
-		afterAll(() => {
-			if (process.env.VISUALISE) {
-				const html = `<html>
-			<head>
-					<title>Component Preview</title>
-					<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-			</head>
-			<body style="margin:0;">
-					<div id="app">
-						 ${renderToString(<HourlyUsage traces={traces}/>)}
-					</div>
-			</body>
-			</html>`;
-				require('fs').writeFileSync('test/lev-report/charts/__snapshots__/HourlyUsage.html', html);
-			}
-		});
+		visualise(<HourlyUsage traces={traces}/>, 'test/lev-report/charts/__snapshots__/HourlyUsage.html');
 	});
 });
