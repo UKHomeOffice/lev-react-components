@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { Details } from "govuk-react";
 
 const StyledDiv = styled.div`
-flex:1;
+flex: 0 1 auto;
 `;
 
 const CountSummary = (props) =>

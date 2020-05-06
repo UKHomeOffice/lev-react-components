@@ -4,6 +4,8 @@ import DatePicker from "./DatePicker";
 import { Button } from 'govuk-react';
 import GroupFilter from './GroupFilter';
 import CheckBoxFilter from "./CheckBoxFilter";
+import CountSummary from "./CountSummary";
+import AdvancedSearchFilter from "./AdvancedSearchFilter";
 
 const FormDiv = styled.div`
   position: relative;
@@ -43,11 +45,11 @@ const ReportFilters = props =>
                  selectedGroup={props.currentGroup} name="currentGroup">
       Filter by Department
     </GroupFilter>
-    <CheckBoxFilter groups={props.groups} selectedGroup={props.withoutGroups} name="withoutGroup">
-      Exclude Department(s)
-    </CheckBoxFilter>
     <BottomButton as={Button} type="submit">Show usage</BottomButton>
   </FormDiv>
+  <AdvancedSearchFilter withoutGroups={props.withoutGroups} groups={props.groups} selectedGroup={props.currentGroup}>
+    Advanced
+  </AdvancedSearchFilter>
 </form>;
 
 export default ReportFilters;
