@@ -10,11 +10,11 @@ const StyledDiv = styled.div`
   margin-left: 20px;
   font-size: 60px;
   text-align: right;
-    p {
-      font-size: 20px;
-      margin-top: 0;
-      margin-bottom: 3px;
-    }
+  p {
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 3px;
+  }
 `;
 
 const formatCount = (count) => Number(count).toLocaleString();

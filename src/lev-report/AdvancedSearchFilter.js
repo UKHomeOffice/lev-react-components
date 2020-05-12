@@ -2,7 +2,7 @@ import React from 'react';
 import { Details } from "govuk-react";
 import styled from "styled-components";
 import CheckBoxFilter from "./CheckBoxFilter";
-import CountSummary from "./CountSummary";
+import GroupsSummary from "./GroupsSummary";
 
 const AdvancedSearchContainer = styled.div`
   position: relative;
@@ -19,7 +19,7 @@ const AdvancedSearchFilter = (props) =>
         <CheckBoxFilter groups={props.groups} selectedGroup={props.withoutGroups} name="withoutGroup">
           Exclude Department(s)
         </CheckBoxFilter>
-        <CountSummary selectedGroup={props.selectedGroup} withoutGroups={props.withoutGroups} />
+        <GroupsSummary selectedGroup={props.selectedGroup} withoutGroups={props.withoutGroups} />
       </AdvancedSearchContainer>
     </Details>
   </React.Fragment>

@@ -66,8 +66,7 @@ class LevReport extends React.Component {
         />
         <UsageCounter count={this.state.total}
                       from={this.state.from} to={this.state.to}
-                      group={this.state.currentGroup}
-                      withoutGroups={this.state.withoutGroups}/>
+                      group={this.state.currentGroup} />
       </RelativeParent>
       <LevUsage dates={this.state.dates} datasets={this.state.datasets}/>
       <HourlyUsage traces={this.state.hourlyUsage} />

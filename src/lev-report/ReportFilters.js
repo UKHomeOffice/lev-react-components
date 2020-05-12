@@ -4,7 +4,7 @@ import DatePicker from "./DatePicker";
 import { Button } from 'govuk-react';
 import GroupFilter from './GroupFilter';
 import CheckBoxFilter from "./CheckBoxFilter";
-import CountSummary from "./CountSummary";
+import GroupsSummary from "./GroupsSummary";
 import AdvancedSearchFilter from "./AdvancedSearchFilter";
 
 const FormDiv = styled.div`
