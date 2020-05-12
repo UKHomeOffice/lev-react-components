@@ -1,5 +1,6 @@
 dist/
 node_modules/
+.floo*
 
 # any snapshot component previews
 **/__snapshots__/*.html
