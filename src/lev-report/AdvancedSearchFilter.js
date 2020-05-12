@@ -8,6 +8,8 @@ const AdvancedSearchContainer = styled.div`
   position: relative;
   display: flex;
   margin-bottom: 15px;
+  transform-origin: left;
+  transform: scale(0.7);
 `
 
 const AdvancedSearchFilter = (props) =>
