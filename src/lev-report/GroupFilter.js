@@ -4,7 +4,7 @@ import { InputField } from 'govuk-react';
 
 const StyledInputField = styled(InputField)`
   display: inline-block;
-  max-width: 15em;
+  max-width: 17em;
   width: 15em;
   margin-right: 2em;
 `;

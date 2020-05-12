@@ -3,6 +3,9 @@ import styled from 'styled-components';
 import DatePicker from "./DatePicker";
 import { Button } from 'govuk-react';
 import GroupFilter from './GroupFilter';
+import CheckBoxFilter from "./CheckBoxFilter";
+import ReportContext from "./ReportContext";
+import AdvancedSearchFilter from "./AdvancedSearchFilter";
 
 const FormDiv = styled.div`
   position: relative;
@@ -24,7 +27,7 @@ const BottomButton = styled('Button')`
 const ReportFilters = props =>
 <form onSubmit={props.onSubmit}>
   <FormDiv>
-    <DatePicker hint="Default: start of the month" input={{
+    <DatePicker hint="Default: start of month" input={{
       name: 'from',
       onChange: props.updateFrom,
       value: props.from
@@ -44,6 +47,9 @@ const ReportFilters = props =>
     </GroupFilter>
     <BottomButton as={Button} type="submit">Show usage</BottomButton>
   </FormDiv>
+  <AdvancedSearchFilter withoutGroups={props.withoutGroups} groups={props.groups} selectedGroup={props.currentGroup}>
+    Advanced
+  </AdvancedSearchFilter>
 </form>;
 
 export default ReportFilters;

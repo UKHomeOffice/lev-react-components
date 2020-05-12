@@ -6,7 +6,7 @@ const StyledDatePicker = styled(InputField)`
   display: inline-block;
   margin-right: 2em;
   max-width: 15em;
-  width: 15em;
+  width: 13em;
 `;
 
 const DatePicker = ({ hint, children, input, ...meta }) =>
