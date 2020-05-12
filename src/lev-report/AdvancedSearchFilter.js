@@ -2,7 +2,7 @@ import React from 'react';
 import { Details } from "govuk-react";
 import styled from "styled-components";
 import CheckBoxFilter from "./CheckBoxFilter";
-import GroupsSummary from "./GroupsSummary";
+import ReportContext from "./ReportContext";
 
 const AdvancedSearchContainer = styled.div`
   position: relative;
@@ -13,15 +13,13 @@ const AdvancedSearchContainer = styled.div`
 `
 
 const AdvancedSearchFilter = (props) =>
-  <React.Fragment>
     <Details summary={props.children}>
       <AdvancedSearchContainer>
         <CheckBoxFilter groups={props.groups} selectedGroup={props.withoutGroups} name="withoutGroup">
           Exclude Department(s)
         </CheckBoxFilter>
-        <GroupsSummary selectedGroup={props.selectedGroup} withoutGroups={props.withoutGroups} />
+        <ReportContext selectedGroup={props.selectedGroup} withoutGroups={props.withoutGroups} />
       </AdvancedSearchContainer>
     </Details>
-  </React.Fragment>
 
 export default AdvancedSearchFilter;
