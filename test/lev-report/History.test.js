@@ -1,4 +1,5 @@
 import React from 'react';
+import 'jest-styled-components';
 import History from "../../src/lev-report/History";
 import data from "./history.fixture";
 import renderer from 'react-test-renderer';
