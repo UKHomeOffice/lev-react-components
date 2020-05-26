@@ -19,4 +19,9 @@ module.exports = {
     path.resolve('./test/**/?(*.)+(spec|test).[tj]s?(x)')
   ],
 
+  transform: {
+    '^.+\\.js$': 'babel-jest',
+    '^.+\\.svg$': '<rootDir>/test/svg-transformer.js'
+  }
+
 };
