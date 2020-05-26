@@ -1,6 +1,7 @@
 'use strict';
 
-import {renderToString} from "react-dom/server";
+import fs from 'fs';
+import { renderToString } from "react-dom/server";
 
 const html = component => `<html>
 <head>
@@ -16,7 +17,7 @@ const html = component => `<html>
 
 const visualise = (component, path) => afterAll(() => {
   if (process.env.VISUALISE) {
-    require('fs').writeFileSync(path, html(renderToString(component)));
+    fs.writeFileSync(path, html(renderToString(component)));
   }
 });
 
