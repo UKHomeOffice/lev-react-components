@@ -3,8 +3,6 @@ import { VictoryArea, VictoryAxis, VictoryChart, VictoryTheme } from 'victory';
 const moment = require('moment');
 
 const M = 1000 * 1000;
-export const maxDomain = data => Math.ceil(data[data.length - 1].count / M);
-export const ticks = data => [...Array(maxDomain(data) + 1).keys()];
 
 const CumulativeUsage = ({ data }) => data && data.length &&
 <VictoryChart
@@ -16,8 +14,8 @@ const CumulativeUsage = ({ data }) => data && data.length &&
 		width={600}
 >
 	<VictoryAxis
-			domain={[moment(data[0].month).unix(), moment(data[data.length - 1].month).unix()]}
-			tickValues={data.map(d => moment(d.month).unix())}
+			domain={[data[0].month, data[data.length - 1].month]}
+			tickValues={data.map(d => d.month)}
 			tickFormat={tick => {
 				const date = moment.unix(tick);
 				const month = date.month();
@@ -39,7 +37,7 @@ const CumulativeUsage = ({ data }) => data && data.length &&
 					fillOpacity: 0.2,
 					stroke: '#2746B9'
 			} }}
-			x={d => moment(d.month).unix()}
+			x="month"
 			y="count"
 	/>
 </VictoryChart> || null;
