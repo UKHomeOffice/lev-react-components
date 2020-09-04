@@ -1,6 +1,7 @@
 import React from 'react';
 import LevDashboard from "../../src/lev-dashboard";
 import renderer from 'react-test-renderer';
+import 'jest-styled-components';
 import data from './dashboard.fixture';
 
 describe('component', () => {
