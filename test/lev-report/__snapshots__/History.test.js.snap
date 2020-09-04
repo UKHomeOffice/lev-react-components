@@ -394,6 +394,10 @@ Array [
   max-width: none;
 }
 
+.c0 a.page-link {
+  margin-right: 20px;
+}
+
 .c0 > div {
   border-color: #9325b2;
 }
@@ -613,6 +617,28 @@ Array [
             id="govuk-react-menu"
             open={false}
           >
+            <li
+              className="c18"
+            >
+              <a
+                className="sc-pJUVA c11 page-link"
+                href="/"
+              >
+                Report
+              </a>
+              <a
+                className="sc-pJUVA c11 page-link"
+                href="/history"
+              >
+                History
+              </a>
+              <a
+                className="sc-pJUVA c11 page-link"
+                href="/dashboard"
+              >
+                Dashboard
+              </a>
+            </li>
             <li
               className="c18"
             >
