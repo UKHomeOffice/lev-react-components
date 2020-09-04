@@ -1,0 +1,187 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`component renders correctly 1`] = `
+Array [
+  <a
+    className="sc-fznzqM kvCCTm"
+    href="#content"
+  >
+    Skip to main content
+  </a>,
+  <div
+    className="lev-top-nav__WideTopNavWrapper-sc-1xqrio7-1 lev-top-nav__HOTopNavWrapper-sc-1xqrio7-2 cMQZed"
+  >
+    <div
+      className="sc-fznOgF bVbLkG lev-top-nav__WideTopNav-sc-1xqrio7-0 dqxlcN"
+      color="#ffffff"
+    >
+      <div
+        className="sc-fznYue eihUhY"
+      >
+        <div
+          className="sc-fzqOul cjFxmV"
+        >
+          <div
+            className="sc-fzqzEs hkVdUc"
+          >
+            <div
+              className="sc-fzooss iCfqiC"
+            >
+              <span
+                className="sc-fzqyvX jsuqTv"
+              >
+                <svg
+                  data-filename="src/lev-top-nav/home-office.svg"
+                />
+              </span>
+              <span
+                className="sc-fzqKVi ftWfTt"
+              >
+                
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          className="sc-fzoCCn kiDcmw"
+        >
+          <div
+            className="sc-fzoCUK bOWzAL"
+          >
+            <a
+              className="sc-pJUVA sc-pRtAn duArwf"
+              href="/"
+            >
+              Life Event Verification - Dashboard
+            </a>
+          </div>
+          <div
+            className="sc-fzoOEf iAvkfR"
+          >
+            <label
+              className="sc-fznBtT iFoojP"
+              htmlFor="govuk-react-menu-button"
+              onClick={[Function]}
+            >
+              <div
+                className="sc-fznNTe kyEkho"
+              >
+                Menu
+              </div>
+              <div
+                className="sc-fzobTh jUpBIS"
+                open={false}
+              />
+            </label>
+          </div>
+          <input
+            checked={false}
+            className="sc-fzpdyU cxQOgP"
+            id="govuk-react-menu-button"
+            type="checkbox"
+          />
+          <ul
+            className="sc-fzpdbB llyxNe"
+            id="govuk-react-menu"
+            open={false}
+          >
+            <li
+              className="sc-fzppAM hyNRXL"
+            >
+              <a
+                className="sc-pJUVA sc-pRtAn duArwf page-link"
+                href="/"
+              >
+                Report
+              </a>
+              <a
+                className="sc-pJUVA sc-pRtAn duArwf page-link"
+                href="/history"
+              >
+                History
+              </a>
+              <a
+                className="sc-pJUVA sc-pRtAn duArwf page-link"
+                href="/dashboard"
+              >
+                Dashboard
+              </a>
+            </li>
+            <li
+              className="sc-fzppAM hyNRXL"
+            >
+              <a
+                className="sc-pJUVA sc-pRtAn duArwf"
+                href="oauth/logout"
+              >
+                Sign out
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div
+      className="sc-fzonjX kIQCby"
+    />
+  </div>,
+  <div
+    className="wide-width-container__WideWidthContainer-u8f8qw-0 jNANUB"
+  >
+    <main
+      className="sc-fzppip WUIPk"
+      id="content"
+    >
+      <script
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "window.dashboardProps={\\"props\\":{\\"data\\":{\\"allTime\\":10000,\\"todaySearches\\":500,\\"customerCostSaving\\":70000}}};",
+          }
+        }
+      />
+      <script
+        src="/public/js/bundle.js"
+      />
+      <div>
+        <div
+          className="CostSavingCounter__StyledDiv-sc-29zeg9-0 gtjIKu"
+        >
+          <h2>
+            £
+            NaN
+          </h2>
+          <p>
+            cost saving to 
+            customers
+          </p>
+        </div>
+        <div
+          className="DashboardContent__CountDiv-sc-1ij3k2f-0 eONdvl"
+          id="dashboard"
+        >
+          <div
+            className="DashboardCounter__StyledDiv-sc-1jc9ez0-0 bPUDFu"
+          >
+            <h2>
+              NaN
+            </h2>
+            <p>
+              searches today
+            </p>
+          </div>
+          <div
+            className="DashboardCounter__StyledDiv-sc-1jc9ez0-0 bPUDFu"
+          >
+            <h2>
+              NaN
+            </h2>
+            <p>
+              searches all time
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>,
+]
+`;

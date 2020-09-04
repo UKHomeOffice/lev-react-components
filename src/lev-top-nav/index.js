@@ -26,8 +26,9 @@ const WideTopNavWrapper = styled.div`
   > div {
     max-width: none;
   }
+  
   a.page-link {
-  margin-right: 20px;
+    margin-right: 20px;
   }
 `;
 
