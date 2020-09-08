@@ -12,11 +12,6 @@ describe('component', () => {
 
   it('renders correctly', () => expect(tree.toJSON()).toMatchSnapshot());
 
-  it('contains 3 links with page-link class', () => {
-    let links = root.findAllByProps({className: "page-link"});
-    expect(links.length).toBe(3);
-  })
-
   it('contains a report link', () => {
     let link = root.findByProps({className: "page-link", href: '/'});
     expect(link.props.children).toEqual('Report');
