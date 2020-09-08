@@ -58,7 +58,10 @@ const LevTopNav = props => {
   }
 
   const IconTitle = <TopNav.IconTitle
-    icon={<Logo width={logoWidth} height={logoHeight}/>}>{props.companyText}</TopNav.IconTitle>;
+    icon={<Logo width={logoWidth} height={logoHeight}/>}>
+    {props.companyText}
+  </TopNav.IconTitle>;
+
   const CompanyLink = props.companyLink ? <LogoAnchor href={props.companyLink}>{IconTitle}</LogoAnchor> : IconTitle;
 
   const ServiceTitleLink = (
