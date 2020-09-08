@@ -4,7 +4,7 @@ import HOLogo from './home-office.svg';
 import TopNav, { asTopNavAnchor, asNavLinkAnchor } from '@govuk-react/top-nav';
 
 const LogoAnchor = asTopNavAnchor('a');
-const NavAnchor= asNavLinkAnchor('a');
+const NavAnchor = asNavLinkAnchor('a');
 
 import styled from 'styled-components';
 
@@ -25,6 +25,16 @@ const WideTopNav = styled(TopNav)`
 const WideTopNavWrapper = styled.div`
   > div {
     max-width: none;
+  }
+  
+  a.page-link {
+    margin-right: 20px;
+  }
+  
+  li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
   }
 `;
 
@@ -53,7 +63,11 @@ const LevTopNav = props => {
       break;
   }
 
-  const IconTitle = <TopNav.IconTitle icon={<Logo width={logoWidth} height={logoHeight} />}>{props.companyText}</TopNav.IconTitle>;
+  const IconTitle = <TopNav.IconTitle
+    icon={<Logo width={logoWidth} height={logoHeight}/>}>
+    {props.companyText}
+  </TopNav.IconTitle>;
+
   const CompanyLink = props.companyLink ? <LogoAnchor href={props.companyLink}>{IconTitle}</LogoAnchor> : IconTitle;
 
   const ServiceTitleLink = (
@@ -62,11 +76,9 @@ const LevTopNav = props => {
     </NavAnchor>
   );
 
-  const link = props.links.map(e => <NavAnchor href={e.link}>{e.text}</NavAnchor>);
-
   return <TopNavWrapper>
     <WideTopNav company={CompanyLink} serviceTitle={ServiceTitleLink} {...props}>
-      {props.links.map(e => <NavAnchor href={e.link}>{e.text}</NavAnchor>)}
+      {props.links.map(e => <li><NavAnchor key={e.text} className="page-link" href={e.link}>{e.text}</NavAnchor></li>)}
       {props.children}
       {props.signOutLink && <NavAnchor href={props.signOutLink}>{props.signOutText}</NavAnchor>}
     </WideTopNav>
@@ -78,8 +90,11 @@ LevTopNav.defaultProps = {
   serviceTitleLink: '/',
   serviceTitleText: '',
   signOutText: 'Sign out',
-  links: []
+  links: [
+    { link: '/', text: 'Report' },
+    { link: '/history', text: 'History' },
+    { link: '/dashboard', text: 'Dashboard' },
+  ]
 };
-
 export default LevTopNav;
 export { asTopNavAnchor, asNavLinkAnchor };

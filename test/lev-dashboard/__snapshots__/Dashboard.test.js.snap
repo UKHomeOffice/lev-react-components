@@ -1,0 +1,861 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`component renders correctly 1`] = `
+Array [
+  .c0 {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: 0 !important;
+  overflow: hidden !important;
+  -webkit-clip: rect(0 0 0 0) !important;
+  clip: rect(0 0 0 0) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  border: 0 !important;
+  white-space: nowrap !important;
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 14px;
+  line-height: 1.1428571428571428;
+  display: block;
+  padding: 10px 15px;
+}
+
+.c0:active,
+.c0:focus {
+  position: static !important;
+  width: auto !important;
+  height: auto !important;
+  margin: inherit !important;
+  overflow: visible !important;
+  -webkit-clip: auto !important;
+  clip: auto !important;
+  -webkit-clip-path: none !important;
+  clip-path: none !important;
+  white-space: inherit !important;
+}
+
+.c0:focus {
+  outline: 3px solid #ffdd00;
+  outline-offset: 0;
+  background-color: #ffdd00;
+}
+
+.c0:link,
+.c0:visited,
+.c0:hover,
+.c0:active,
+.c0:focus {
+  color: #0b0c0c;
+}
+
+@media print {
+  .c0 {
+    font-family: sans-serif;
+  }
+}
+
+@media print {
+  .c0:link,
+  .c0:visited,
+  .c0:hover,
+  .c0:active,
+  .c0:focus {
+    color: #000;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c0 {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+
+@media print {
+  .c0 {
+    font-size: 14px;
+    line-height: 1.2;
+  }
+}
+
+@supports (padding:max(calc(0px))) {
+  .c0 {
+    padding-right: max(15px,calc(15px + env(safe-area-inset-right)));
+    padding-left: max(15px,calc(15px + env(safe-area-inset-left)));
+  }
+}
+
+@media only screen and (min-width:641px) {
+
+}
+
+@media only screen and (min-width:641px) {
+
+}
+
+@media only screen and (min-width:641px) {
+
+}
+
+@media only screen and (min-width:641px) {
+
+}
+
+@media only screen and (min-width:641px) {
+
+}
+
+@media only screen and (min-width:641px) {
+
+}
+
+@media only screen and (min-width:641px) {
+
+}
+
+@media only screen and (min-width:641px) {
+
+}
+
+@media print {
+
+}
+
+@media only screen and (min-width:641px) {
+
+}
+
+@media only screen and (min-width:641px) {
+
+}
+
+@media only screen and (min-width:641px) {
+
+}
+
+@media only screen and (min-width:641px) {
+
+}
+
+@media only screen and (min-width:641px) {
+
+}
+
+@media only screen and (min-width:641px) {
+
+}
+
+<a
+    className="c0"
+    href="#content"
+  >
+    Skip to main content
+  </a>,
+  .c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #0b0c0c;
+  color: #ffffff;
+  font-family: "nta",Arial,sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.1428571429;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: calc(100% - 30px);
+  max-width: 960px;
+  padding: calc(10px * 0.8) 15px;
+  box-sizing: border-box;
+}
+
+.c19 {
+  border-bottom: 10px solid #1d70b8;
+  max-width: 960px;
+  margin: 0 auto;
+  width: calc(100% - 30px);
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 800;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  font-size: 30px;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.c17 {
+  display: none;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  margin-top: 5px;
+  width: 100%;
+}
+
+.c18 {
+  -webkit-flex: 1 0 50%;
+  -ms-flex: 1 0 50%;
+  flex: 1 0 50%;
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 3px 0;
+  border-bottom: 1px solid #2e3133;
+}
+
+.c13 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c14 {
+  cursor: default;
+}
+
+.c14:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c15 {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent;
+  -webkit-clip-path: polygon(0% 0%,50% 100%,100% 0%);
+  clip-path: polygon(0% 0%,50% 100%,100% 0%);
+  border-width: 8.66px 5px 0 5px;
+  margin-left: 5px;
+  border-top-color: inherit;
+  border-bottom-color: inherit;
+}
+
+.c6 {
+  vertical-align: baseline;
+}
+
+.c7 {
+  width: 36px;
+  max-height: 27px;
+  display: inline-block;
+  margin-right: 7px;
+}
+
+.c8 {
+  display: inline-block;
+}
+
+.c10 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.1111111111111112;
+  width: 50%;
+}
+
+.c12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  width: 50%;
+}
+
+.c16 {
+  position: absolute;
+  top: -999em;
+}
+
+.c16:checked + ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c11 {
+  color: #ffffff;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;
+  border-bottom: 1px solid transparent;
+  font-weight: 700;
+  line-height: 1;
+  display: inline-block;
+}
+
+.c11:hover {
+  border-bottom-color: #ffffff;
+}
+
+.c11:focus {
+  outline: 3px solid #ffdd00;
+}
+
+.c11:focus {
+  color: #0b0c0c;
+  background-color: #ffdd00;
+  outline: 3px solid #ffdd00;
+}
+
+.c11:focus:hover {
+  border-bottom-color: #0b0c0c;
+}
+
+.c2 > div {
+  max-width: none;
+}
+
+.c2 ul {
+  width: 100%;
+}
+
+.c2 ul li:last-child {
+  margin: -1.9em 0 0 auto;
+}
+
+.c0 > div {
+  max-width: none;
+}
+
+.c0 a.page-link {
+  margin-right: 20px;
+}
+
+.c0 li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.c0 > div {
+  border-color: #9325b2;
+}
+
+@media print {
+
+}
+
+@media print {
+
+}
+
+@media only screen and (min-width:641px) {
+
+}
+
+@media print {
+
+}
+
+@supports (padding:max(calc(0px))) {
+
+}
+
+@media only screen and (min-width:641px) {
+  .c1 {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c3 {
+    padding: calc(10px * 0.8) 0;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    width: calc(100% - 60px);
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c19 {
+    width: calc(100% - 60px);
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c4 {
+    display: block;
+    padding-right: 15px;
+    width: 33.33%;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c9 {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: flex-start;
+    -webkit-box-align: flex-start;
+    -ms-flex-align: flex-start;
+    align-items: flex-start;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    width: 66.66%;
+    padding-left: 15px;
+    margin-top: 0;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c17 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 0;
+    width: auto;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c18 {
+    border-bottom: 0;
+    -webkit-flex: none;
+    -ms-flex: none;
+    flex: none;
+    width: auto;
+    padding-right: 15px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c13 {
+    display: none;
+  }
+}
+
+@media print {
+  .c10 {
+    font-size: 18px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c10 {
+    font-size: 24px;
+    line-height: 1.25;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c10 {
+    width: auto;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c12 {
+    width: auto;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c16 {
+    display: none;
+  }
+}
+
+@media only screen and (min-width:641px) {
+
+}
+
+@media only screen and (min-width:641px) {
+
+}
+
+<div
+    className="lev-top-nav__WideTopNavWrapper-sc-1xqrio7-1 c0"
+  >
+    <div
+      className="c1 c2"
+      color="#ffffff"
+    >
+      <div
+        className="c3"
+      >
+        <div
+          className="c4"
+        >
+          <div
+            className="c5"
+          >
+            <div
+              className="c6"
+            >
+              <span
+                className="c7"
+              >
+                <svg
+                  data-filename="src/lev-top-nav/home-office.svg"
+                />
+              </span>
+              <span
+                className="c8"
+              >
+                
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          className="c9"
+        >
+          <div
+            className="c10"
+          >
+            <a
+              className="sc-pJUVA c11"
+              href="/"
+            >
+              Life Event Verification - Dashboard
+            </a>
+          </div>
+          <div
+            className="c12"
+          >
+            <label
+              className="c13"
+              htmlFor="govuk-react-menu-button"
+              onClick={[Function]}
+            >
+              <div
+                className="c14"
+              >
+                Menu
+              </div>
+              <div
+                className="c15"
+                open={false}
+              />
+            </label>
+          </div>
+          <input
+            checked={false}
+            className="c16"
+            id="govuk-react-menu-button"
+            type="checkbox"
+          />
+          <ul
+            className="c17"
+            id="govuk-react-menu"
+            open={false}
+          >
+            <li
+              className="c18"
+            >
+              <li>
+                <a
+                  className="sc-pJUVA c11 page-link"
+                  href="/"
+                >
+                  Report
+                </a>
+              </li>
+              <li>
+                <a
+                  className="sc-pJUVA c11 page-link"
+                  href="/history"
+                >
+                  History
+                </a>
+              </li>
+              <li>
+                <a
+                  className="sc-pJUVA c11 page-link"
+                  href="/dashboard"
+                >
+                  Dashboard
+                </a>
+              </li>
+            </li>
+            <li
+              className="c18"
+            >
+              <a
+                className="sc-pJUVA c11"
+                href="oauth/logout"
+              >
+                Sign out
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c19"
+    />
+  </div>,
+  .c1 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: block;
+}
+
+.c0 {
+  margin: 0 15px;
+}
+
+.c4 {
+  color: #9325b2;
+  -webkit-flex: 1 1 0;
+  -ms-flex: 1 1 0;
+  flex: 1 1 0;
+  text-align: center;
+  border: 8px solid #9325b2;
+  border-radius: 7px;
+  font-size: 9vh;
+}
+
+.c4 h2 {
+  text-shadow: 2px 2px 4px #000000;
+  margin-bottom: -3vh;
+}
+
+.c2 {
+  font-size: 9vh;
+  color: #9325b2;
+  -webkit-flex: 1 1 0;
+  -ms-flex: 1 1 0;
+  flex: 1 1 0;
+  text-align: center;
+  border: 8px solid #9325b2;
+  border-radius: 7px;
+  margin-bottom: 1vh;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media print {
+
+}
+
+@media print {
+
+}
+
+@media only screen and (min-width:641px) {
+
+}
+
+@media print {
+
+}
+
+@supports (padding:max(calc(0px))) {
+
+}
+
+@media only screen and (min-width:641px) {
+
+}
+
+@media only screen and (min-width:641px) {
+
+}
+
+@media only screen and (min-width:641px) {
+
+}
+
+@media only screen and (min-width:641px) {
+
+}
+
+@media only screen and (min-width:641px) {
+
+}
+
+@media only screen and (min-width:641px) {
+
+}
+
+@media only screen and (min-width:641px) {
+
+}
+
+@media only screen and (min-width:641px) {
+
+}
+
+@media print {
+
+}
+
+@media only screen and (min-width:641px) {
+
+}
+
+@media only screen and (min-width:641px) {
+
+}
+
+@media only screen and (min-width:641px) {
+
+}
+
+@media only screen and (min-width:641px) {
+
+}
+
+@media only screen and (min-width:641px) {
+  .c1 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c0 {
+    margin: 0 30px;
+  }
+}
+
+<div
+    className="c0"
+  >
+    <main
+      className="c1"
+      id="content"
+    >
+      <script
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "window.dashboardProps={\\"customerCostSaving\\":70000,\\"todaySearches\\":500,\\"allTime\\":10000};",
+          }
+        }
+      />
+      <script
+        src="/public/js/bundle.js"
+      />
+      <div>
+        <div
+          className="c2"
+        >
+          <h2>
+            £
+            70,000
+          </h2>
+          <p>
+            cost saving to 
+            customers
+          </p>
+        </div>
+        <div
+          className="c3"
+          id="dashboard"
+        >
+          <div
+            className="c4"
+          >
+            <h2>
+              500
+            </h2>
+            <p>
+              searches today
+            </p>
+          </div>
+          <div
+            className="c4"
+          >
+            <h2>
+              10,000
+            </h2>
+            <p>
+              searches all time
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>,
+]
+`;
