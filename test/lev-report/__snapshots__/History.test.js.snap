@@ -398,6 +398,12 @@ Array [
   margin-right: 20px;
 }
 
+.c0 li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 .c0 > div {
   border-color: #9325b2;
 }
@@ -620,24 +626,30 @@ Array [
             <li
               className="c18"
             >
-              <a
-                className="sc-pJUVA c11 page-link"
-                href="/"
-              >
-                Report
-              </a>
-              <a
-                className="sc-pJUVA c11 page-link"
-                href="/history"
-              >
-                History
-              </a>
-              <a
-                className="sc-pJUVA c11 page-link"
-                href="/dashboard"
-              >
-                Dashboard
-              </a>
+              <li>
+                <a
+                  className="sc-pJUVA c11 page-link"
+                  href="/"
+                >
+                  Report
+                </a>
+              </li>
+              <li>
+                <a
+                  className="sc-pJUVA c11 page-link"
+                  href="/history"
+                >
+                  History
+                </a>
+              </li>
+              <li>
+                <a
+                  className="sc-pJUVA c11 page-link"
+                  href="/dashboard"
+                >
+                  Dashboard
+                </a>
+              </li>
             </li>
             <li
               className="c18"

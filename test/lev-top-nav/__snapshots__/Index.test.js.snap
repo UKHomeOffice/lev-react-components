@@ -245,6 +245,12 @@ exports[`component renders correctly 1`] = `
   margin-right: 20px;
 }
 
+.c0 li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 @media only screen and (min-width:641px) {
   .c1 {
     font-size: 16px;
@@ -454,24 +460,30 @@ exports[`component renders correctly 1`] = `
           <li
             className="c18"
           >
-            <a
-              className="sc-fzoyAV c11 page-link"
-              href="/"
-            >
-              Report
-            </a>
-            <a
-              className="sc-fzoyAV c11 page-link"
-              href="/history"
-            >
-              History
-            </a>
-            <a
-              className="sc-fzoyAV c11 page-link"
-              href="/dashboard"
-            >
-              Dashboard
-            </a>
+            <li>
+              <a
+                className="sc-fzoyAV c11 page-link"
+                href="/"
+              >
+                Report
+              </a>
+            </li>
+            <li>
+              <a
+                className="sc-fzoyAV c11 page-link"
+                href="/history"
+              >
+                History
+              </a>
+            </li>
+            <li>
+              <a
+                className="sc-fzoyAV c11 page-link"
+                href="/dashboard"
+              >
+                Dashboard
+              </a>
+            </li>
           </li>
         </ul>
       </div>

@@ -30,6 +30,12 @@ const WideTopNavWrapper = styled.div`
   a.page-link {
     margin-right: 20px;
   }
+  
+  li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
 `;
 
 const HOTopNavWrapper = styled(WideTopNavWrapper)`
@@ -72,7 +78,7 @@ const LevTopNav = props => {
 
   return <TopNavWrapper>
     <WideTopNav company={CompanyLink} serviceTitle={ServiceTitleLink} {...props}>
-      {props.links.map(e => <NavAnchor key={e.text} className="page-link" href={e.link}>{e.text}</NavAnchor>)}
+      {props.links.map(e => <li><NavAnchor key={e.text} className="page-link" href={e.link}>{e.text}</NavAnchor></li>)}
       {props.children}
       {props.signOutLink && <NavAnchor href={props.signOutLink}>{props.signOutText}</NavAnchor>}
     </WideTopNav>
