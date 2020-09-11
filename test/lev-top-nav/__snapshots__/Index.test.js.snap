@@ -484,6 +484,15 @@ exports[`component renders correctly 1`] = `
                 Dashboard
               </a>
             </li>
+            <li>
+              <a
+                className="sc-fzoyAV c11 page-link"
+                href="https://lev.homeoffice.gov.uk/audit/user-activity/"
+                target="_blank"
+              >
+                User Activity
+              </a>
+            </li>
           </li>
         </ul>
       </div>

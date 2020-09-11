@@ -78,7 +78,9 @@ const LevTopNav = props => {
 
   return <TopNavWrapper>
     <WideTopNav company={CompanyLink} serviceTitle={ServiceTitleLink} {...props}>
-      {props.links.map(e => <li><NavAnchor key={e.text} className="page-link" href={e.link}>{e.text}</NavAnchor></li>)}
+      {props.links.map(e =>
+        <li key={e.text}><NavAnchor className="page-link" href={e.link} target={e.target}>{e.text}</NavAnchor></li>
+      )}
       {props.children}
       {props.signOutLink && <NavAnchor href={props.signOutLink}>{props.signOutText}</NavAnchor>}
     </WideTopNav>
@@ -94,6 +96,7 @@ LevTopNav.defaultProps = {
     { link: '/', text: 'Report' },
     { link: '/history', text: 'History' },
     { link: '/dashboard', text: 'Dashboard' },
+    { link: 'https://lev.homeoffice.gov.uk/audit/user-activity/', text: 'User Activity', target: "_blank"  },
   ]
 };
 export default LevTopNav;
