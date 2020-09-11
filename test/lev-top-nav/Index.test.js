@@ -28,7 +28,9 @@ describe('component', () => {
   });
 
   it('contains a link to the user activity report', () => {
-    let link = root.findByProps({className: "page-link", href: 'https://lev.homeoffice.gov.uk/audit/user-activity/'});
+    let link = root.findByProps({
+      className: "page-link", href: 'https://lev.homeoffice.gov.uk/audit/user-activity/', target: "_blank"
+    });
     expect(link.props.children).toEqual('User Activity');
   });
 });
