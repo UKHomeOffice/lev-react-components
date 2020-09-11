@@ -650,6 +650,15 @@ Array [
                   Dashboard
                 </a>
               </li>
+              <li>
+                <a
+                  className="sc-pJUVA c11 page-link"
+                  href="https://lev.homeoffice.gov.uk/audit/user-activity/"
+                  target="_blank"
+                >
+                  User Activity
+                </a>
+              </li>
             </li>
             <li
               className="c18"
