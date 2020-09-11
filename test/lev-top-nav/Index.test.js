@@ -26,4 +26,9 @@ describe('component', () => {
     let link = root.findByProps({className: "page-link", href: '/history'});
     expect(link.props.children).toEqual('History');
   });
+
+  it('contains a link to the user activity report', () => {
+    let link = root.findByProps({className: "page-link", href: 'https://lev.homeoffice.gov.uk/audit/user-activity/'});
+    expect(link.props.children).toEqual('User Activity');
+  });
 });
