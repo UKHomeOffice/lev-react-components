@@ -11,7 +11,7 @@ const History = props =>
       signOutLink: 'oauth/logout'
     }}
 >
-  <h2>Total searches by quarter (in millions)</h2>
+  <h2>Cumulative total searches</h2>
   <CumulativeUsage data={props.data} />
 </LevPage>;
 
