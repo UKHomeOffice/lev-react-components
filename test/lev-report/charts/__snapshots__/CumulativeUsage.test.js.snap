@@ -861,7 +861,7 @@ exports[`CumulativeUsage component renders correctly 1`] = `
             textAnchor="middle"
             x={215.99779393632275}
           >
-            '18
+            2018
           </tspan>
         </text>
       </g>
@@ -1677,7 +1677,7 @@ exports[`CumulativeUsage component renders correctly 1`] = `
             textAnchor="middle"
             x={375.6554178120501}
           >
-            '19
+            2019
           </tspan>
         </text>
       </g>
@@ -2493,7 +2493,7 @@ exports[`CumulativeUsage component renders correctly 1`] = `
             textAnchor="middle"
             x={535.3130416877775}
           >
-            '20
+            2020
           </tspan>
         </text>
       </g>

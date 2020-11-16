@@ -19,7 +19,7 @@ const CumulativeUsage = ({ data }) => data && data.length &&
 			tickFormat={tick => {
 				const date = moment.unix(tick);
 				const month = date.month();
-				return month ? month % 3 === 0 ? `Q${date.quarter()}` : '' : `'${date.format('YY')}`;
+				return month ? ((month % 3 === 0) ? `Q${date.quarter()}` : '') : date.format('YYYY');
 			}}
 			style={{ tickLabels: { fontSize: 10 } }}
 	/>
