@@ -32,7 +32,7 @@ exports[`component renders correctly 1`] = `
   box-sizing: border-box;
 }
 
-.c19 {
+.c20 {
   border-bottom: 10px solid #1d70b8;
   max-width: 960px;
   margin: 0 auto;
@@ -85,7 +85,7 @@ exports[`component renders correctly 1`] = `
   margin-top: 10px;
 }
 
-.c17 {
+.c18 {
   display: none;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
@@ -96,7 +96,7 @@ exports[`component renders correctly 1`] = `
   width: 100%;
 }
 
-.c18 {
+.c19 {
   -webkit-flex: 1 0 50%;
   -ms-flex: 1 0 50%;
   flex: 1 0 50%;
@@ -107,7 +107,7 @@ exports[`component renders correctly 1`] = `
   border-bottom: 1px solid #2e3133;
 }
 
-.c13 {
+.c14 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -118,16 +118,16 @@ exports[`component renders correctly 1`] = `
   align-items: center;
 }
 
-.c14 {
+.c15 {
   cursor: default;
 }
 
-.c14:hover {
+.c15:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c15 {
+.c16 {
   content: "";
   display: inline-block;
   width: 0;
@@ -167,7 +167,7 @@ exports[`component renders correctly 1`] = `
   width: 50%;
 }
 
-.c12 {
+.c13 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -183,12 +183,12 @@ exports[`component renders correctly 1`] = `
   width: 50%;
 }
 
-.c16 {
+.c17 {
   position: absolute;
   top: -999em;
 }
 
-.c16:checked + ul {
+.c17:checked + ul {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -204,7 +204,6 @@ exports[`component renders correctly 1`] = `
   border-bottom: 1px solid transparent;
   font-weight: 700;
   line-height: 1;
-  display: inline-block;
 }
 
 .c11:hover {
@@ -215,13 +214,17 @@ exports[`component renders correctly 1`] = `
   outline: 3px solid #ffdd00;
 }
 
-.c11:focus {
+.c12 {
+  display: inline-block;
+}
+
+.c12:focus {
   color: #0b0c0c;
   background-color: #ffdd00;
   outline: 3px solid #ffdd00;
 }
 
-.c11:focus:hover {
+.c12:focus:hover {
   border-bottom-color: #0b0c0c;
 }
 
@@ -269,7 +272,7 @@ exports[`component renders correctly 1`] = `
 }
 
 @media only screen and (min-width:641px) {
-  .c19 {
+  .c20 {
     width: calc(100% - 60px);
   }
 }
@@ -302,7 +305,7 @@ exports[`component renders correctly 1`] = `
 }
 
 @media only screen and (min-width:641px) {
-  .c17 {
+  .c18 {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -313,7 +316,7 @@ exports[`component renders correctly 1`] = `
 }
 
 @media only screen and (min-width:641px) {
-  .c18 {
+  .c19 {
     border-bottom: 0;
     -webkit-flex: none;
     -ms-flex: none;
@@ -324,7 +327,7 @@ exports[`component renders correctly 1`] = `
 }
 
 @media only screen and (min-width:641px) {
-  .c13 {
+  .c14 {
     display: none;
   }
 }
@@ -350,13 +353,13 @@ exports[`component renders correctly 1`] = `
 }
 
 @media only screen and (min-width:641px) {
-  .c12 {
+  .c13 {
     width: auto;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c16 {
+  .c17 {
     display: none;
   }
 }
@@ -421,48 +424,48 @@ exports[`component renders correctly 1`] = `
           className="c10"
         >
           <a
-            className="sc-fzoyAV c11"
+            className="c11 c12"
             href="/"
           >
             
           </a>
         </div>
         <div
-          className="c12"
+          className="c13"
         >
           <label
-            className="c13"
+            className="c14"
             htmlFor="govuk-react-menu-button"
             onClick={[Function]}
           >
             <div
-              className="c14"
+              className="c15"
             >
               Menu
             </div>
             <div
-              className="c15"
+              className="c16"
               open={false}
             />
           </label>
         </div>
         <input
           checked={false}
-          className="c16"
+          className="c17"
           id="govuk-react-menu-button"
           type="checkbox"
         />
         <ul
-          className="c17"
+          className="c18"
           id="govuk-react-menu"
           open={false}
         >
           <li
-            className="c18"
+            className="c19"
           >
             <li>
               <a
-                className="sc-fzoyAV c11 page-link"
+                className="c11 c12 page-link"
                 href="/"
               >
                 Report
@@ -470,7 +473,7 @@ exports[`component renders correctly 1`] = `
             </li>
             <li>
               <a
-                className="sc-fzoyAV c11 page-link"
+                className="c11 c12 page-link"
                 href="/history"
               >
                 History
@@ -478,7 +481,7 @@ exports[`component renders correctly 1`] = `
             </li>
             <li>
               <a
-                className="sc-fzoyAV c11 page-link"
+                className="c11 c12 page-link"
                 href="/dashboard"
               >
                 Dashboard
@@ -486,7 +489,7 @@ exports[`component renders correctly 1`] = `
             </li>
             <li>
               <a
-                className="sc-fzoyAV c11 page-link"
+                className="c11 c12 page-link"
                 href="https://lev.homeoffice.gov.uk/audit/user-activity/"
                 target="_blank"
               >
@@ -499,7 +502,7 @@ exports[`component renders correctly 1`] = `
     </div>
   </div>
   <div
-    className="c19"
+    className="c20"
   />
 </div>
 `;
