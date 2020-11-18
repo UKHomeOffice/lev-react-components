@@ -77,8 +77,8 @@ exports[`CumulativeUsage component renders correctly 1`] = `
           style={
             Object {
               "fill": "transparent",
-              "size": 5,
-              "stroke": "#90A4AE",
+              "size": 3,
+              "stroke": "grey",
               "strokeLinecap": "round",
               "strokeLinejoin": "round",
               "strokeWidth": 1,
@@ -88,14 +88,14 @@ exports[`CumulativeUsage component renders correctly 1`] = `
           x1={69.90013263634214}
           x2={69.90013263634214}
           y1={200}
-          y2={205}
+          y2={203}
         />
         <text
           direction="inherit"
           dx={0}
           dy={8.55}
           x={69.90013263634214}
-          y={213}
+          y={211}
         >
           <tspan
             dx={0}
@@ -145,8 +145,8 @@ exports[`CumulativeUsage component renders correctly 1`] = `
           style={
             Object {
               "fill": "transparent",
-              "size": 5,
-              "stroke": "#90A4AE",
+              "size": 3,
+              "stroke": "grey",
               "strokeLinecap": "round",
               "strokeLinejoin": "round",
               "strokeWidth": 1,
@@ -156,14 +156,14 @@ exports[`CumulativeUsage component renders correctly 1`] = `
           x1={82.14784076927464}
           x2={82.14784076927464}
           y1={200}
-          y2={205}
+          y2={203}
         />
         <text
           direction="inherit"
           dx={0}
           dy={8.55}
           x={82.14784076927464}
-          y={213}
+          y={211}
         >
           <tspan
             dx={0}
@@ -195,7 +195,7 @@ exports[`CumulativeUsage component renders correctly 1`] = `
             Object {
               "fill": "none",
               "pointerEvents": "painted",
-              "stroke": "#ECEFF1",
+              "stroke": "lightgrey",
               "strokeDasharray": "10, 5",
               "strokeLinecap": "round",
               "strokeLinejoin": "round",
@@ -213,8 +213,8 @@ exports[`CumulativeUsage component renders correctly 1`] = `
           style={
             Object {
               "fill": "transparent",
-              "size": 5,
-              "stroke": "#90A4AE",
+              "size": 6,
+              "stroke": "grey",
               "strokeLinecap": "round",
               "strokeLinejoin": "round",
               "strokeWidth": 1,
@@ -224,14 +224,14 @@ exports[`CumulativeUsage component renders correctly 1`] = `
           x1={95.68957758887116}
           x2={95.68957758887116}
           y1={200}
-          y2={205}
+          y2={206}
         />
         <text
           direction="inherit"
           dx={0}
           dy={8.55}
           x={95.68957758887116}
-          y={213}
+          y={214}
         >
           <tspan
             dx={0}
@@ -281,8 +281,8 @@ exports[`CumulativeUsage component renders correctly 1`] = `
           style={
             Object {
               "fill": "transparent",
-              "size": 5,
-              "stroke": "#90A4AE",
+              "size": 3,
+              "stroke": "grey",
               "strokeLinecap": "round",
               "strokeLinejoin": "round",
               "strokeWidth": 1,
@@ -292,14 +292,14 @@ exports[`CumulativeUsage component renders correctly 1`] = `
           x1={108.81212201701314}
           x2={108.81212201701314}
           y1={200}
-          y2={205}
+          y2={203}
         />
         <text
           direction="inherit"
           dx={0}
           dy={8.55}
           x={108.81212201701314}
-          y={213}
+          y={211}
         >
           <tspan
             dx={0}
@@ -349,8 +349,8 @@ exports[`CumulativeUsage component renders correctly 1`] = `
           style={
             Object {
               "fill": "transparent",
-              "size": 5,
-              "stroke": "#90A4AE",
+              "size": 3,
+              "stroke": "grey",
               "strokeLinecap": "round",
               "strokeLinejoin": "round",
               "strokeWidth": 1,
@@ -360,14 +360,14 @@ exports[`CumulativeUsage component renders correctly 1`] = `
           x1={122.37208459275983}
           x2={122.37208459275983}
           y1={200}
-          y2={205}
+          y2={203}
         />
         <text
           direction="inherit"
           dx={0}
           dy={8.55}
           x={122.37208459275983}
-          y={213}
+          y={211}
         >
           <tspan
             dx={0}
@@ -399,7 +399,7 @@ exports[`CumulativeUsage component renders correctly 1`] = `
             Object {
               "fill": "none",
               "pointerEvents": "painted",
-              "stroke": "#ECEFF1",
+              "stroke": "lightgrey",
               "strokeDasharray": "10, 5",
               "strokeLinecap": "round",
               "strokeLinejoin": "round",
@@ -417,8 +417,8 @@ exports[`CumulativeUsage component renders correctly 1`] = `
           style={
             Object {
               "fill": "transparent",
-              "size": 5,
-              "stroke": "#90A4AE",
+              "size": 6,
+              "stroke": "grey",
               "strokeLinecap": "round",
               "strokeLinejoin": "round",
               "strokeWidth": 1,
@@ -428,14 +428,14 @@ exports[`CumulativeUsage component renders correctly 1`] = `
           x1={135.4946290209018}
           x2={135.4946290209018}
           y1={200}
-          y2={205}
+          y2={206}
         />
         <text
           direction="inherit"
           dx={0}
           dy={8.55}
           x={135.4946290209018}
-          y={213}
+          y={214}
         >
           <tspan
             dx={0}
@@ -485,8 +485,8 @@ exports[`CumulativeUsage component renders correctly 1`] = `
           style={
             Object {
               "fill": "transparent",
-              "size": 5,
-              "stroke": "#90A4AE",
+              "size": 3,
+              "stroke": "grey",
               "strokeLinecap": "round",
               "strokeLinejoin": "round",
               "strokeWidth": 1,
@@ -496,14 +496,14 @@ exports[`CumulativeUsage component renders correctly 1`] = `
           x1={149.05459159664852}
           x2={149.05459159664852}
           y1={200}
-          y2={205}
+          y2={203}
         />
         <text
           direction="inherit"
           dx={0}
           dy={8.55}
           x={149.05459159664852}
-          y={213}
+          y={211}
         >
           <tspan
             dx={0}
@@ -553,8 +553,8 @@ exports[`CumulativeUsage component renders correctly 1`] = `
           style={
             Object {
               "fill": "transparent",
-              "size": 5,
-              "stroke": "#90A4AE",
+              "size": 3,
+              "stroke": "grey",
               "strokeLinecap": "round",
               "strokeLinejoin": "round",
               "strokeWidth": 1,
@@ -564,14 +564,14 @@ exports[`CumulativeUsage component renders correctly 1`] = `
           x1={162.6145541723952}
           x2={162.6145541723952}
           y1={200}
-          y2={205}
+          y2={203}
         />
         <text
           direction="inherit"
           dx={0}
           dy={8.55}
           x={162.6145541723952}
-          y={213}
+          y={211}
         >
           <tspan
             dx={0}
@@ -603,7 +603,7 @@ exports[`CumulativeUsage component renders correctly 1`] = `
             Object {
               "fill": "none",
               "pointerEvents": "painted",
-              "stroke": "#ECEFF1",
+              "stroke": "lightgrey",
               "strokeDasharray": "10, 5",
               "strokeLinecap": "round",
               "strokeLinejoin": "round",
@@ -621,8 +621,8 @@ exports[`CumulativeUsage component renders correctly 1`] = `
           style={
             Object {
               "fill": "transparent",
-              "size": 5,
-              "stroke": "#90A4AE",
+              "size": 6,
+              "stroke": "grey",
               "strokeLinecap": "round",
               "strokeLinejoin": "round",
               "strokeWidth": 1,
@@ -632,14 +632,14 @@ exports[`CumulativeUsage component renders correctly 1`] = `
           x1={175.7370986005372}
           x2={175.7370986005372}
           y1={200}
-          y2={205}
+          y2={206}
         />
         <text
           direction="inherit"
           dx={0}
           dy={8.55}
           x={175.7370986005372}
-          y={213}
+          y={214}
         >
           <tspan
             dx={0}
@@ -689,8 +689,8 @@ exports[`CumulativeUsage component renders correctly 1`] = `
           style={
             Object {
               "fill": "transparent",
-              "size": 5,
-              "stroke": "#90A4AE",
+              "size": 3,
+              "stroke": "grey",
               "strokeLinecap": "round",
               "strokeLinejoin": "round",
               "strokeWidth": 1,
@@ -700,14 +700,14 @@ exports[`CumulativeUsage component renders correctly 1`] = `
           x1={189.31528693243408}
           x2={189.31528693243408}
           y1={200}
-          y2={205}
+          y2={203}
         />
         <text
           direction="inherit"
           dx={0}
           dy={8.55}
           x={189.31528693243408}
-          y={213}
+          y={211}
         >
           <tspan
             dx={0}
@@ -757,8 +757,8 @@ exports[`CumulativeUsage component renders correctly 1`] = `
           style={
             Object {
               "fill": "transparent",
-              "size": 5,
-              "stroke": "#90A4AE",
+              "size": 3,
+              "stroke": "grey",
               "strokeLinecap": "round",
               "strokeLinejoin": "round",
               "strokeWidth": 1,
@@ -768,14 +768,14 @@ exports[`CumulativeUsage component renders correctly 1`] = `
           x1={202.43783136057607}
           x2={202.43783136057607}
           y1={200}
-          y2={205}
+          y2={203}
         />
         <text
           direction="inherit"
           dx={0}
           dy={8.55}
           x={202.43783136057607}
-          y={213}
+          y={211}
         >
           <tspan
             dx={0}
@@ -807,7 +807,7 @@ exports[`CumulativeUsage component renders correctly 1`] = `
             Object {
               "fill": "none",
               "pointerEvents": "painted",
-              "stroke": "#ECEFF1",
+              "stroke": "grey",
               "strokeDasharray": "10, 5",
               "strokeLinecap": "round",
               "strokeLinejoin": "round",
@@ -825,8 +825,8 @@ exports[`CumulativeUsage component renders correctly 1`] = `
           style={
             Object {
               "fill": "transparent",
-              "size": 5,
-              "stroke": "#90A4AE",
+              "size": 6,
+              "stroke": "black",
               "strokeLinecap": "round",
               "strokeLinejoin": "round",
               "strokeWidth": 1,
@@ -836,14 +836,14 @@ exports[`CumulativeUsage component renders correctly 1`] = `
           x1={215.99779393632275}
           x2={215.99779393632275}
           y1={200}
-          y2={205}
+          y2={206}
         />
         <text
           direction="inherit"
           dx={0}
           dy={8.55}
           x={215.99779393632275}
-          y={213}
+          y={214}
         >
           <tspan
             dx={0}
@@ -861,7 +861,7 @@ exports[`CumulativeUsage component renders correctly 1`] = `
             textAnchor="middle"
             x={215.99779393632275}
           >
-            '18
+            2018
           </tspan>
         </text>
       </g>
@@ -893,8 +893,8 @@ exports[`CumulativeUsage component renders correctly 1`] = `
           style={
             Object {
               "fill": "transparent",
-              "size": 5,
-              "stroke": "#90A4AE",
+              "size": 3,
+              "stroke": "grey",
               "strokeLinecap": "round",
               "strokeLinejoin": "round",
               "strokeWidth": 1,
@@ -904,14 +904,14 @@ exports[`CumulativeUsage component renders correctly 1`] = `
           x1={229.5577565120695}
           x2={229.5577565120695}
           y1={200}
-          y2={205}
+          y2={203}
         />
         <text
           direction="inherit"
           dx={0}
           dy={8.55}
           x={229.5577565120695}
-          y={213}
+          y={211}
         >
           <tspan
             dx={0}
@@ -961,8 +961,8 @@ exports[`CumulativeUsage component renders correctly 1`] = `
           style={
             Object {
               "fill": "transparent",
-              "size": 5,
-              "stroke": "#90A4AE",
+              "size": 3,
+              "stroke": "grey",
               "strokeLinecap": "round",
               "strokeLinejoin": "round",
               "strokeWidth": 1,
@@ -972,14 +972,14 @@ exports[`CumulativeUsage component renders correctly 1`] = `
           x1={241.80546464500196}
           x2={241.80546464500196}
           y1={200}
-          y2={205}
+          y2={203}
         />
         <text
           direction="inherit"
           dx={0}
           dy={8.55}
           x={241.80546464500196}
-          y={213}
+          y={211}
         >
           <tspan
             dx={0}
@@ -1011,7 +1011,7 @@ exports[`CumulativeUsage component renders correctly 1`] = `
             Object {
               "fill": "none",
               "pointerEvents": "painted",
-              "stroke": "#ECEFF1",
+              "stroke": "lightgrey",
               "strokeDasharray": "10, 5",
               "strokeLinecap": "round",
               "strokeLinejoin": "round",
@@ -1029,8 +1029,8 @@ exports[`CumulativeUsage component renders correctly 1`] = `
           style={
             Object {
               "fill": "transparent",
-              "size": 5,
-              "stroke": "#90A4AE",
+              "size": 6,
+              "stroke": "grey",
               "strokeLinecap": "round",
               "strokeLinejoin": "round",
               "strokeWidth": 1,
@@ -1040,14 +1040,14 @@ exports[`CumulativeUsage component renders correctly 1`] = `
           x1={255.34720146459847}
           x2={255.34720146459847}
           y1={200}
-          y2={205}
+          y2={206}
         />
         <text
           direction="inherit"
           dx={0}
           dy={8.55}
           x={255.34720146459847}
-          y={213}
+          y={214}
         >
           <tspan
             dx={0}
@@ -1097,8 +1097,8 @@ exports[`CumulativeUsage component renders correctly 1`] = `
           style={
             Object {
               "fill": "transparent",
-              "size": 5,
-              "stroke": "#90A4AE",
+              "size": 3,
+              "stroke": "grey",
               "strokeLinecap": "round",
               "strokeLinejoin": "round",
               "strokeWidth": 1,
@@ -1108,14 +1108,14 @@ exports[`CumulativeUsage component renders correctly 1`] = `
           x1={268.46974589274043}
           x2={268.46974589274043}
           y1={200}
-          y2={205}
+          y2={203}
         />
         <text
           direction="inherit"
           dx={0}
           dy={8.55}
           x={268.46974589274043}
-          y={213}
+          y={211}
         >
           <tspan
             dx={0}
@@ -1165,8 +1165,8 @@ exports[`CumulativeUsage component renders correctly 1`] = `
           style={
             Object {
               "fill": "transparent",
-              "size": 5,
-              "stroke": "#90A4AE",
+              "size": 3,
+              "stroke": "grey",
               "strokeLinecap": "round",
               "strokeLinejoin": "round",
               "strokeWidth": 1,
@@ -1176,14 +1176,14 @@ exports[`CumulativeUsage component renders correctly 1`] = `
           x1={282.0297084684872}
           x2={282.0297084684872}
           y1={200}
-          y2={205}
+          y2={203}
         />
         <text
           direction="inherit"
           dx={0}
           dy={8.55}
           x={282.0297084684872}
-          y={213}
+          y={211}
         >
           <tspan
             dx={0}
@@ -1215,7 +1215,7 @@ exports[`CumulativeUsage component renders correctly 1`] = `
             Object {
               "fill": "none",
               "pointerEvents": "painted",
-              "stroke": "#ECEFF1",
+              "stroke": "lightgrey",
               "strokeDasharray": "10, 5",
               "strokeLinecap": "round",
               "strokeLinejoin": "round",
@@ -1233,8 +1233,8 @@ exports[`CumulativeUsage component renders correctly 1`] = `
           style={
             Object {
               "fill": "transparent",
-              "size": 5,
-              "stroke": "#90A4AE",
+              "size": 6,
+              "stroke": "grey",
               "strokeLinecap": "round",
               "strokeLinejoin": "round",
               "strokeWidth": 1,
@@ -1244,14 +1244,14 @@ exports[`CumulativeUsage component renders correctly 1`] = `
           x1={295.15225289662914}
           x2={295.15225289662914}
           y1={200}
-          y2={205}
+          y2={206}
         />
         <text
           direction="inherit"
           dx={0}
           dy={8.55}
           x={295.15225289662914}
-          y={213}
+          y={214}
         >
           <tspan
             dx={0}
@@ -1301,8 +1301,8 @@ exports[`CumulativeUsage component renders correctly 1`] = `
           style={
             Object {
               "fill": "transparent",
-              "size": 5,
-              "stroke": "#90A4AE",
+              "size": 3,
+              "stroke": "grey",
               "strokeLinecap": "round",
               "strokeLinejoin": "round",
               "strokeWidth": 1,
@@ -1312,14 +1312,14 @@ exports[`CumulativeUsage component renders correctly 1`] = `
           x1={308.7122154723759}
           x2={308.7122154723759}
           y1={200}
-          y2={205}
+          y2={203}
         />
         <text
           direction="inherit"
           dx={0}
           dy={8.55}
           x={308.7122154723759}
-          y={213}
+          y={211}
         >
           <tspan
             dx={0}
@@ -1369,8 +1369,8 @@ exports[`CumulativeUsage component renders correctly 1`] = `
           style={
             Object {
               "fill": "transparent",
-              "size": 5,
-              "stroke": "#90A4AE",
+              "size": 3,
+              "stroke": "grey",
               "strokeLinecap": "round",
               "strokeLinejoin": "round",
               "strokeWidth": 1,
@@ -1380,14 +1380,14 @@ exports[`CumulativeUsage component renders correctly 1`] = `
           x1={322.27217804812256}
           x2={322.27217804812256}
           y1={200}
-          y2={205}
+          y2={203}
         />
         <text
           direction="inherit"
           dx={0}
           dy={8.55}
           x={322.27217804812256}
-          y={213}
+          y={211}
         >
           <tspan
             dx={0}
@@ -1419,7 +1419,7 @@ exports[`CumulativeUsage component renders correctly 1`] = `
             Object {
               "fill": "none",
               "pointerEvents": "painted",
-              "stroke": "#ECEFF1",
+              "stroke": "lightgrey",
               "strokeDasharray": "10, 5",
               "strokeLinecap": "round",
               "strokeLinejoin": "round",
@@ -1437,8 +1437,8 @@ exports[`CumulativeUsage component renders correctly 1`] = `
           style={
             Object {
               "fill": "transparent",
-              "size": 5,
-              "stroke": "#90A4AE",
+              "size": 6,
+              "stroke": "grey",
               "strokeLinecap": "round",
               "strokeLinejoin": "round",
               "strokeWidth": 1,
@@ -1448,14 +1448,14 @@ exports[`CumulativeUsage component renders correctly 1`] = `
           x1={335.3947224762645}
           x2={335.3947224762645}
           y1={200}
-          y2={205}
+          y2={206}
         />
         <text
           direction="inherit"
           dx={0}
           dy={8.55}
           x={335.3947224762645}
-          y={213}
+          y={214}
         >
           <tspan
             dx={0}
@@ -1505,8 +1505,8 @@ exports[`CumulativeUsage component renders correctly 1`] = `
           style={
             Object {
               "fill": "transparent",
-              "size": 5,
-              "stroke": "#90A4AE",
+              "size": 3,
+              "stroke": "grey",
               "strokeLinecap": "round",
               "strokeLinejoin": "round",
               "strokeWidth": 1,
@@ -1516,14 +1516,14 @@ exports[`CumulativeUsage component renders correctly 1`] = `
           x1={348.9729108081614}
           x2={348.9729108081614}
           y1={200}
-          y2={205}
+          y2={203}
         />
         <text
           direction="inherit"
           dx={0}
           dy={8.55}
           x={348.9729108081614}
-          y={213}
+          y={211}
         >
           <tspan
             dx={0}
@@ -1573,8 +1573,8 @@ exports[`CumulativeUsage component renders correctly 1`] = `
           style={
             Object {
               "fill": "transparent",
-              "size": 5,
-              "stroke": "#90A4AE",
+              "size": 3,
+              "stroke": "grey",
               "strokeLinecap": "round",
               "strokeLinejoin": "round",
               "strokeWidth": 1,
@@ -1584,14 +1584,14 @@ exports[`CumulativeUsage component renders correctly 1`] = `
           x1={362.09545523630334}
           x2={362.09545523630334}
           y1={200}
-          y2={205}
+          y2={203}
         />
         <text
           direction="inherit"
           dx={0}
           dy={8.55}
           x={362.09545523630334}
-          y={213}
+          y={211}
         >
           <tspan
             dx={0}
@@ -1623,7 +1623,7 @@ exports[`CumulativeUsage component renders correctly 1`] = `
             Object {
               "fill": "none",
               "pointerEvents": "painted",
-              "stroke": "#ECEFF1",
+              "stroke": "grey",
               "strokeDasharray": "10, 5",
               "strokeLinecap": "round",
               "strokeLinejoin": "round",
@@ -1641,8 +1641,8 @@ exports[`CumulativeUsage component renders correctly 1`] = `
           style={
             Object {
               "fill": "transparent",
-              "size": 5,
-              "stroke": "#90A4AE",
+              "size": 6,
+              "stroke": "black",
               "strokeLinecap": "round",
               "strokeLinejoin": "round",
               "strokeWidth": 1,
@@ -1652,14 +1652,14 @@ exports[`CumulativeUsage component renders correctly 1`] = `
           x1={375.6554178120501}
           x2={375.6554178120501}
           y1={200}
-          y2={205}
+          y2={206}
         />
         <text
           direction="inherit"
           dx={0}
           dy={8.55}
           x={375.6554178120501}
-          y={213}
+          y={214}
         >
           <tspan
             dx={0}
@@ -1677,7 +1677,7 @@ exports[`CumulativeUsage component renders correctly 1`] = `
             textAnchor="middle"
             x={375.6554178120501}
           >
-            '19
+            2019
           </tspan>
         </text>
       </g>
@@ -1709,8 +1709,8 @@ exports[`CumulativeUsage component renders correctly 1`] = `
           style={
             Object {
               "fill": "transparent",
-              "size": 5,
-              "stroke": "#90A4AE",
+              "size": 3,
+              "stroke": "grey",
               "strokeLinecap": "round",
               "strokeLinejoin": "round",
               "strokeWidth": 1,
@@ -1720,14 +1720,14 @@ exports[`CumulativeUsage component renders correctly 1`] = `
           x1={389.2153803877968}
           x2={389.2153803877968}
           y1={200}
-          y2={205}
+          y2={203}
         />
         <text
           direction="inherit"
           dx={0}
           dy={8.55}
           x={389.2153803877968}
-          y={213}
+          y={211}
         >
           <tspan
             dx={0}
@@ -1777,8 +1777,8 @@ exports[`CumulativeUsage component renders correctly 1`] = `
           style={
             Object {
               "fill": "transparent",
-              "size": 5,
-              "stroke": "#90A4AE",
+              "size": 3,
+              "stroke": "grey",
               "strokeLinecap": "round",
               "strokeLinejoin": "round",
               "strokeWidth": 1,
@@ -1788,14 +1788,14 @@ exports[`CumulativeUsage component renders correctly 1`] = `
           x1={401.4630885207293}
           x2={401.4630885207293}
           y1={200}
-          y2={205}
+          y2={203}
         />
         <text
           direction="inherit"
           dx={0}
           dy={8.55}
           x={401.4630885207293}
-          y={213}
+          y={211}
         >
           <tspan
             dx={0}
@@ -1827,7 +1827,7 @@ exports[`CumulativeUsage component renders correctly 1`] = `
             Object {
               "fill": "none",
               "pointerEvents": "painted",
-              "stroke": "#ECEFF1",
+              "stroke": "lightgrey",
               "strokeDasharray": "10, 5",
               "strokeLinecap": "round",
               "strokeLinejoin": "round",
@@ -1845,8 +1845,8 @@ exports[`CumulativeUsage component renders correctly 1`] = `
           style={
             Object {
               "fill": "transparent",
-              "size": 5,
-              "stroke": "#90A4AE",
+              "size": 6,
+              "stroke": "grey",
               "strokeLinecap": "round",
               "strokeLinejoin": "round",
               "strokeWidth": 1,
@@ -1856,14 +1856,14 @@ exports[`CumulativeUsage component renders correctly 1`] = `
           x1={415.0048253403258}
           x2={415.0048253403258}
           y1={200}
-          y2={205}
+          y2={206}
         />
         <text
           direction="inherit"
           dx={0}
           dy={8.55}
           x={415.0048253403258}
-          y={213}
+          y={214}
         >
           <tspan
             dx={0}
@@ -1913,8 +1913,8 @@ exports[`CumulativeUsage component renders correctly 1`] = `
           style={
             Object {
               "fill": "transparent",
-              "size": 5,
-              "stroke": "#90A4AE",
+              "size": 3,
+              "stroke": "grey",
               "strokeLinecap": "round",
               "strokeLinejoin": "round",
               "strokeWidth": 1,
@@ -1924,14 +1924,14 @@ exports[`CumulativeUsage component renders correctly 1`] = `
           x1={428.12736976846776}
           x2={428.12736976846776}
           y1={200}
-          y2={205}
+          y2={203}
         />
         <text
           direction="inherit"
           dx={0}
           dy={8.55}
           x={428.12736976846776}
-          y={213}
+          y={211}
         >
           <tspan
             dx={0}
@@ -1981,8 +1981,8 @@ exports[`CumulativeUsage component renders correctly 1`] = `
           style={
             Object {
               "fill": "transparent",
-              "size": 5,
-              "stroke": "#90A4AE",
+              "size": 3,
+              "stroke": "grey",
               "strokeLinecap": "round",
               "strokeLinejoin": "round",
               "strokeWidth": 1,
@@ -1992,14 +1992,14 @@ exports[`CumulativeUsage component renders correctly 1`] = `
           x1={441.68733234421444}
           x2={441.68733234421444}
           y1={200}
-          y2={205}
+          y2={203}
         />
         <text
           direction="inherit"
           dx={0}
           dy={8.55}
           x={441.68733234421444}
-          y={213}
+          y={211}
         >
           <tspan
             dx={0}
@@ -2031,7 +2031,7 @@ exports[`CumulativeUsage component renders correctly 1`] = `
             Object {
               "fill": "none",
               "pointerEvents": "painted",
-              "stroke": "#ECEFF1",
+              "stroke": "lightgrey",
               "strokeDasharray": "10, 5",
               "strokeLinecap": "round",
               "strokeLinejoin": "round",
@@ -2049,8 +2049,8 @@ exports[`CumulativeUsage component renders correctly 1`] = `
           style={
             Object {
               "fill": "transparent",
-              "size": 5,
-              "stroke": "#90A4AE",
+              "size": 6,
+              "stroke": "grey",
               "strokeLinecap": "round",
               "strokeLinejoin": "round",
               "strokeWidth": 1,
@@ -2060,14 +2060,14 @@ exports[`CumulativeUsage component renders correctly 1`] = `
           x1={454.8098767723564}
           x2={454.8098767723564}
           y1={200}
-          y2={205}
+          y2={206}
         />
         <text
           direction="inherit"
           dx={0}
           dy={8.55}
           x={454.8098767723564}
-          y={213}
+          y={214}
         >
           <tspan
             dx={0}
@@ -2117,8 +2117,8 @@ exports[`CumulativeUsage component renders correctly 1`] = `
           style={
             Object {
               "fill": "transparent",
-              "size": 5,
-              "stroke": "#90A4AE",
+              "size": 3,
+              "stroke": "grey",
               "strokeLinecap": "round",
               "strokeLinejoin": "round",
               "strokeWidth": 1,
@@ -2128,14 +2128,14 @@ exports[`CumulativeUsage component renders correctly 1`] = `
           x1={468.36983934810314}
           x2={468.36983934810314}
           y1={200}
-          y2={205}
+          y2={203}
         />
         <text
           direction="inherit"
           dx={0}
           dy={8.55}
           x={468.36983934810314}
-          y={213}
+          y={211}
         >
           <tspan
             dx={0}
@@ -2185,8 +2185,8 @@ exports[`CumulativeUsage component renders correctly 1`] = `
           style={
             Object {
               "fill": "transparent",
-              "size": 5,
-              "stroke": "#90A4AE",
+              "size": 3,
+              "stroke": "grey",
               "strokeLinecap": "round",
               "strokeLinejoin": "round",
               "strokeWidth": 1,
@@ -2196,14 +2196,14 @@ exports[`CumulativeUsage component renders correctly 1`] = `
           x1={481.9298019238499}
           x2={481.9298019238499}
           y1={200}
-          y2={205}
+          y2={203}
         />
         <text
           direction="inherit"
           dx={0}
           dy={8.55}
           x={481.9298019238499}
-          y={213}
+          y={211}
         >
           <tspan
             dx={0}
@@ -2235,7 +2235,7 @@ exports[`CumulativeUsage component renders correctly 1`] = `
             Object {
               "fill": "none",
               "pointerEvents": "painted",
-              "stroke": "#ECEFF1",
+              "stroke": "lightgrey",
               "strokeDasharray": "10, 5",
               "strokeLinecap": "round",
               "strokeLinejoin": "round",
@@ -2253,8 +2253,8 @@ exports[`CumulativeUsage component renders correctly 1`] = `
           style={
             Object {
               "fill": "transparent",
-              "size": 5,
-              "stroke": "#90A4AE",
+              "size": 6,
+              "stroke": "grey",
               "strokeLinecap": "round",
               "strokeLinejoin": "round",
               "strokeWidth": 1,
@@ -2264,14 +2264,14 @@ exports[`CumulativeUsage component renders correctly 1`] = `
           x1={495.0523463519918}
           x2={495.0523463519918}
           y1={200}
-          y2={205}
+          y2={206}
         />
         <text
           direction="inherit"
           dx={0}
           dy={8.55}
           x={495.0523463519918}
-          y={213}
+          y={214}
         >
           <tspan
             dx={0}
@@ -2321,8 +2321,8 @@ exports[`CumulativeUsage component renders correctly 1`] = `
           style={
             Object {
               "fill": "transparent",
-              "size": 5,
-              "stroke": "#90A4AE",
+              "size": 3,
+              "stroke": "grey",
               "strokeLinecap": "round",
               "strokeLinejoin": "round",
               "strokeWidth": 1,
@@ -2332,14 +2332,14 @@ exports[`CumulativeUsage component renders correctly 1`] = `
           x1={508.63053468388875}
           x2={508.63053468388875}
           y1={200}
-          y2={205}
+          y2={203}
         />
         <text
           direction="inherit"
           dx={0}
           dy={8.55}
           x={508.63053468388875}
-          y={213}
+          y={211}
         >
           <tspan
             dx={0}
@@ -2389,8 +2389,8 @@ exports[`CumulativeUsage component renders correctly 1`] = `
           style={
             Object {
               "fill": "transparent",
-              "size": 5,
-              "stroke": "#90A4AE",
+              "size": 3,
+              "stroke": "grey",
               "strokeLinecap": "round",
               "strokeLinejoin": "round",
               "strokeWidth": 1,
@@ -2400,14 +2400,14 @@ exports[`CumulativeUsage component renders correctly 1`] = `
           x1={521.7530791120307}
           x2={521.7530791120307}
           y1={200}
-          y2={205}
+          y2={203}
         />
         <text
           direction="inherit"
           dx={0}
           dy={8.55}
           x={521.7530791120307}
-          y={213}
+          y={211}
         >
           <tspan
             dx={0}
@@ -2439,7 +2439,7 @@ exports[`CumulativeUsage component renders correctly 1`] = `
             Object {
               "fill": "none",
               "pointerEvents": "painted",
-              "stroke": "#ECEFF1",
+              "stroke": "grey",
               "strokeDasharray": "10, 5",
               "strokeLinecap": "round",
               "strokeLinejoin": "round",
@@ -2457,8 +2457,8 @@ exports[`CumulativeUsage component renders correctly 1`] = `
           style={
             Object {
               "fill": "transparent",
-              "size": 5,
-              "stroke": "#90A4AE",
+              "size": 6,
+              "stroke": "black",
               "strokeLinecap": "round",
               "strokeLinejoin": "round",
               "strokeWidth": 1,
@@ -2468,14 +2468,14 @@ exports[`CumulativeUsage component renders correctly 1`] = `
           x1={535.3130416877775}
           x2={535.3130416877775}
           y1={200}
-          y2={205}
+          y2={206}
         />
         <text
           direction="inherit"
           dx={0}
           dy={8.55}
           x={535.3130416877775}
-          y={213}
+          y={214}
         >
           <tspan
             dx={0}
@@ -2493,7 +2493,7 @@ exports[`CumulativeUsage component renders correctly 1`] = `
             textAnchor="middle"
             x={535.3130416877775}
           >
-            '20
+            2020
           </tspan>
         </text>
       </g>
@@ -2525,8 +2525,8 @@ exports[`CumulativeUsage component renders correctly 1`] = `
           style={
             Object {
               "fill": "transparent",
-              "size": 5,
-              "stroke": "#90A4AE",
+              "size": 3,
+              "stroke": "grey",
               "strokeLinecap": "round",
               "strokeLinejoin": "round",
               "strokeWidth": 1,
@@ -2536,14 +2536,14 @@ exports[`CumulativeUsage component renders correctly 1`] = `
           x1={548.8730042635241}
           x2={548.8730042635241}
           y1={200}
-          y2={205}
+          y2={203}
         />
         <text
           direction="inherit"
           dx={0}
           dy={8.55}
           x={548.8730042635241}
-          y={213}
+          y={211}
         >
           <tspan
             dx={0}
@@ -2593,8 +2593,8 @@ exports[`CumulativeUsage component renders correctly 1`] = `
           style={
             Object {
               "fill": "transparent",
-              "size": 5,
-              "stroke": "#90A4AE",
+              "size": 3,
+              "stroke": "grey",
               "strokeLinecap": "round",
               "strokeLinejoin": "round",
               "strokeWidth": 1,
@@ -2604,14 +2604,14 @@ exports[`CumulativeUsage component renders correctly 1`] = `
           x1={561.5581305440613}
           x2={561.5581305440613}
           y1={200}
-          y2={205}
+          y2={203}
         />
         <text
           direction="inherit"
           dx={0}
           dy={8.55}
           x={561.5581305440613}
-          y={213}
+          y={211}
         >
           <tspan
             dx={0}
@@ -2643,7 +2643,7 @@ exports[`CumulativeUsage component renders correctly 1`] = `
             Object {
               "fill": "none",
               "pointerEvents": "painted",
-              "stroke": "#ECEFF1",
+              "stroke": "lightgrey",
               "strokeDasharray": "10, 5",
               "strokeLinecap": "round",
               "strokeLinejoin": "round",
@@ -2661,8 +2661,8 @@ exports[`CumulativeUsage component renders correctly 1`] = `
           style={
             Object {
               "fill": "transparent",
-              "size": 5,
-              "stroke": "#90A4AE",
+              "size": 6,
+              "stroke": "grey",
               "strokeLinecap": "round",
               "strokeLinejoin": "round",
               "strokeWidth": 1,
@@ -2672,14 +2672,14 @@ exports[`CumulativeUsage component renders correctly 1`] = `
           x1={575.0998673636578}
           x2={575.0998673636578}
           y1={200}
-          y2={205}
+          y2={206}
         />
         <text
           direction="inherit"
           dx={0}
           dy={8.55}
           x={575.0998673636578}
-          y={213}
+          y={214}
         >
           <tspan
             dx={0}
@@ -2733,7 +2733,7 @@ exports[`CumulativeUsage component renders correctly 1`] = `
             Object {
               "fill": "none",
               "pointerEvents": "painted",
-              "stroke": "#ECEFF1",
+              "stroke": "lightgrey",
               "strokeDasharray": "10, 5",
               "strokeLinecap": "round",
               "strokeLinejoin": "round",
@@ -2801,7 +2801,7 @@ exports[`CumulativeUsage component renders correctly 1`] = `
             Object {
               "fill": "none",
               "pointerEvents": "painted",
-              "stroke": "#ECEFF1",
+              "stroke": "lightgrey",
               "strokeDasharray": "10, 5",
               "strokeLinecap": "round",
               "strokeLinejoin": "round",
@@ -2869,7 +2869,7 @@ exports[`CumulativeUsage component renders correctly 1`] = `
             Object {
               "fill": "none",
               "pointerEvents": "painted",
-              "stroke": "#ECEFF1",
+              "stroke": "lightgrey",
               "strokeDasharray": "10, 5",
               "strokeLinecap": "round",
               "strokeLinejoin": "round",
@@ -2937,7 +2937,7 @@ exports[`CumulativeUsage component renders correctly 1`] = `
             Object {
               "fill": "none",
               "pointerEvents": "painted",
-              "stroke": "#ECEFF1",
+              "stroke": "lightgrey",
               "strokeDasharray": "10, 5",
               "strokeLinecap": "round",
               "strokeLinejoin": "round",

@@ -1,6 +1,6 @@
 {
   "name": "lev-react-components",
-  "version": "0.12.0",
+  "version": "0.12.1",
   "description": "React.js components for use in the LEV project",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",

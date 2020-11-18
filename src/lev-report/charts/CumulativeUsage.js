@@ -19,13 +19,28 @@ const CumulativeUsage = ({ data }) => data && data.length &&
 			tickFormat={tick => {
 				const date = moment.unix(tick);
 				const month = date.month();
-				return month ? month % 3 === 0 ? `Q${date.quarter()}` : '' : `'${date.format('YY')}`;
+				return month ? ((month % 3 === 0) ? `Q${date.quarter()}` : '') : date.format('YYYY');
 			}}
-			style={{ tickLabels: { fontSize: 10 } }}
+			style={{
+				grid: {
+					stroke: tick => ({
+						0: 'grey',
+						3: 'lightgrey',
+						6: 'lightgrey',
+						9: 'lightgrey'
+					})[moment.unix(tick).month()] || '#ECEFF1'
+				},
+				ticks: {
+					stroke: tick => moment.unix(tick).month() ? 'grey' : 'black',
+					size: tick => (moment.unix(tick).month() % 3 === 0) ? 6 : 3
+				},
+				tickLabels: { fontSize: 10 }
+			}}
 	/>
 	<VictoryAxis
 			dependentAxis
 			tickFormat={t => `${t / M}M`}
+			style={{ grid: { stroke: 'lightgrey' } }}
 	/>
 	<VictoryArea
 			key="CumulativeUsage"
