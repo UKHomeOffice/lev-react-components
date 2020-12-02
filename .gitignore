@@ -1,6 +1,7 @@
 dist/
 node_modules/
 .floo*
+.idea/
 
 # any snapshot component previews
 **/__snapshots__/*.html
