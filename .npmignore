@@ -1,8 +1,0 @@
-src/
-test/
-./*.js
-./*.jsx
-./*.json
-.babelrc
-.idea/
-.floo*

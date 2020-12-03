@@ -4,6 +4,10 @@
   "description": "React.js components for use in the LEV project",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
+  "files": [
+    "/dist",
+    "/README.md"
+  ],
   "scripts": {
     "test": "jest",
     "visualise": "VISUALISE=true npm test",
